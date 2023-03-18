@@ -1,2 +1,9 @@
 // manejar el listener de sockets
-sockets.on("product_added");
+
+const socket = io();
+
+socket.emit("message", "Hooooolaaaaaaa");
+
+socket.on("product_added", (data) => {
+	console.log(data);
+});

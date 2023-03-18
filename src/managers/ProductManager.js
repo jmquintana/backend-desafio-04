@@ -20,7 +20,7 @@ export default class ProductManager {
 		const hasPrice = product.price >= 0;
 		const hasStock = product.stock > 0;
 		const hasCategory = product.category ?? "" !== "";
-		console.log(product.category);
+		console.log(product);
 
 		if (
 			!(
