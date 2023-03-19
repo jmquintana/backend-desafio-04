@@ -76,6 +76,9 @@ export default class ProductManager {
 			};
 
 		newProduct.status = newProduct.stock > 0;
+		newProduct.price = parseFloat(newProduct.price);
+		newProduct.stock = parseInt(newProduct.stock);
+
 		const products = await this.getProducts();
 		const productIndex = products.findIndex(
 			(product) => product.code === newProduct.code

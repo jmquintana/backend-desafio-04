@@ -1,6 +1,6 @@
 import ProductManager from "../managers/ProductManager.js";
 import { Router } from "express";
-// import { uploader } from "../utils.js";
+import { uploader } from "../utils.js";
 
 const router = Router();
 const manager = new ProductManager();
@@ -19,8 +19,26 @@ router.get("/:pid", async (req, res) => {
 	return res.send(result);
 });
 
-router.post("/", async (req, res) => {
+router.post("/", uploader.array("thumbnails", 5), async (req, res) => {
 	let product = req.body;
+	let files = req.files;
+
+	if (!product) {
+		return res.status(400).send({
+			status: "Error",
+			error: "Error, the product could no be added",
+		});
+	}
+
+	product.thumbnails = [];
+
+	if (files) {
+		files.forEach((file) => {
+			const imageUrl = `http://localhost:8080/${file.filename}`;
+			product.thumbnails.push(imageUrl);
+		});
+	}
+
 	const result = await manager.addProduct(product);
 
 	if (result.status === "Added") {

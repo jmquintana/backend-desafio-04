@@ -123,5 +123,82 @@
 		"category": "animal",
 		"status": true,
 		"id": 13
+	},
+	{
+		"title": "prueba",
+		"description": "esto es una descripcion",
+		"price": "200",
+		"code": "ABC56487",
+		"stock": "10",
+		"category": "food",
+		"thumbnails": [],
+		"status": true,
+		"id": 14
+	},
+	{
+		"title": "prueba",
+		"description": "esto es una descripcion",
+		"price": "200",
+		"code": "ABC5648",
+		"stock": "10",
+		"category": "food",
+		"thumbnails": [
+			"http://localhost:8080/1679259657999-AntaresBlueDiamond.png"
+		],
+		"status": true,
+		"id": 15
+	},
+	{
+		"title": "prueba",
+		"description": "esto es una descripcion",
+		"price": "200",
+		"code": "ABC564",
+		"stock": "10",
+		"category": "food",
+		"thumbnails": [
+			"http://localhost:8080/1679260021487-SpaceTimeCreature.png",
+			"http://localhost:8080/1679260021495-SpaceTimeFlower.png"
+		],
+		"status": true,
+		"id": 16
+	},
+	{
+		"title": "prueba",
+		"description": "esto es una descripcion",
+		"price": "200",
+		"code": "ABC56",
+		"stock": "10",
+		"category": "food",
+		"thumbnails": [
+			"http://localhost:8080/function getFullYear() { [native code] }-function getMonth() { [native code] }-function getDate() { [native code] }-SpaceTimeFlower.png"
+		],
+		"status": true,
+		"id": 17
+	},
+	{
+		"title": "prueba",
+		"description": "esto es una descripcion",
+		"price": 200,
+		"code": "ABC561",
+		"stock": 10,
+		"category": "food",
+		"thumbnails": [
+			"http://localhost:8080/SpaceTimeFlower.png"
+		],
+		"status": true,
+		"id": 18
+	},
+	{
+		"title": "prueba",
+		"description": "esto es una descripcion",
+		"price": 200.5,
+		"code": "ABC5612",
+		"stock": 10,
+		"category": "food",
+		"thumbnails": [
+			"http://localhost:8080/SpaceTimeFlower.png"
+		],
+		"status": true,
+		"id": 19
 	}
 ]
