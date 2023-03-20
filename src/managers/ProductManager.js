@@ -14,13 +14,13 @@ export default class ProductManager {
 	#readFile = async (filePath) => await fs.promises.readFile(filePath, "utf-8");
 
 	#isValidProduct = (product) => {
+		console.log(product);
 		const hasTitle = product.title ?? "" !== "";
 		const hasDescription = product.description ?? "" !== "";
 		const hasCode = product.code ?? "" !== "";
 		const hasPrice = product.price >= 0;
 		const hasStock = product.stock > 0;
 		const hasCategory = product.category ?? "" !== "";
-		console.log(product);
 
 		if (
 			!(
@@ -99,7 +99,10 @@ export default class ProductManager {
 
 		await this.#writeFile(products);
 
-		socket.io.emit("product_added", newProduct);
+		socket.io.emit("product_added", {
+			status: "Product added",
+			result: newProduct,
+		});
 
 		return { status: "Added", newProduct };
 	};
@@ -157,6 +160,11 @@ export default class ProductManager {
 				(element) => element.id !== productId
 			);
 			await this.#writeFile(newProducts);
+
+			socket.io.emit("product_deleted", {
+				status: "Product deleted",
+				result: product.result,
+			});
 
 			if (products.length - newProducts.length > 0) {
 				const message = "Product deleted!";

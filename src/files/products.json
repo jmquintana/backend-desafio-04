@@ -1,19 +1,9 @@
 [
 	{
-		"title": "producto de prueba 1",
-		"description": "Este es un producto de prueba",
-		"code": "abc123",
-		"stock": 1,
-		"price": 10000,
-		"thumbnail": [],
-		"id": 1,
-		"status": true
-	},
-	{
 		"title": "producto de prueba 2",
 		"description": "Este es un producto de prueba",
 		"price": 10000,
-		"thumbnail": [],
+		"thumbnails": [],
 		"code": "abc456",
 		"stock": 0,
 		"id": 2,
@@ -23,7 +13,7 @@
 		"title": "producto de prueba 3",
 		"description": "Este es un producto de prueba",
 		"price": 50,
-		"thumbnail": "Sin imagen",
+		"thumbnails": [],
 		"code": "abc789",
 		"stock": 1000,
 		"id": 3
@@ -32,7 +22,7 @@
 		"title": "producto de prueba 4",
 		"description": "Este es un producto de prueba",
 		"price": 500,
-		"thumbnail": "Sin imagen",
+		"thumbnails": [],
 		"code": "abc321",
 		"stock": 25,
 		"id": 4
@@ -41,7 +31,7 @@
 		"title": "producto de prueba 5",
 		"description": "Este es un producto de prueba",
 		"price": 2,
-		"thumbnail": "Sin imagen",
+		"thumbnails": [],
 		"code": "abc632",
 		"stock": 16000,
 		"id": 5
@@ -50,7 +40,7 @@
 		"title": "producto de prueba 6",
 		"description": "Este es un producto de prueba",
 		"price": 1500,
-		"thumbnail": "Sin imagen",
+		"thumbnails": [],
 		"code": "abc126",
 		"stock": 120,
 		"id": 6
@@ -59,7 +49,7 @@
 		"title": "producto de prueba 7",
 		"description": "Este es un producto de prueba",
 		"price": 352,
-		"thumbnail": "Sin imagen",
+		"thumbnails": [],
 		"code": "abc458",
 		"stock": 600,
 		"id": 7
@@ -68,7 +58,7 @@
 		"title": "producto de prueba 8",
 		"description": "Este es un producto de prueba",
 		"price": 451,
-		"thumbnail": "Sin imagen",
+		"thumbnails": [],
 		"code": "abc787",
 		"stock": 1000,
 		"id": 8
@@ -77,52 +67,21 @@
 		"title": "producto de prueba 9",
 		"description": "Este es un producto de prueba",
 		"price": 400,
-		"thumbnail": "Sin imagen",
+		"thumbnails": [],
 		"code": "abc322",
 		"stock": 250,
 		"id": 9
 	},
 	{
-		"title": "producto de prueba 10",
-		"description": "Este es un producto de prueba",
-		"price": 20,
-		"thumbnail": "Sin imagen",
-		"code": "abc562",
-		"stock": 0,
-		"id": 10
-	},
-	{
 		"title": "lalala",
 		"description": "Este es un producto de prueba",
 		"price": 200,
-		"thumbnail": "Sin imagen",
+		"thumbnails": [],
 		"code": "abc123456",
 		"stock": 10,
 		"category": "food",
 		"status": true,
 		"id": 11
-	},
-	{
-		"title": "lalala",
-		"description": "Este es un producto de prueba",
-		"price": 200,
-		"thumbnail": "Sin imagen",
-		"code": "abc1234568",
-		"stock": 10,
-		"category": "animal",
-		"status": true,
-		"id": 12
-	},
-	{
-		"title": "lalala",
-		"description": "Este es un producto de prueba",
-		"price": 200,
-		"thumbnail": "Sin imagen",
-		"code": "abc123458",
-		"stock": 10,
-		"category": "animal",
-		"status": true,
-		"id": 13
 	},
 	{
 		"title": "prueba",
@@ -165,32 +124,6 @@
 	{
 		"title": "prueba",
 		"description": "esto es una descripcion",
-		"price": "200",
-		"code": "ABC56",
-		"stock": "10",
-		"category": "food",
-		"thumbnails": [
-			"http://localhost:8080/function getFullYear() { [native code] }-function getMonth() { [native code] }-function getDate() { [native code] }-SpaceTimeFlower.png"
-		],
-		"status": true,
-		"id": 17
-	},
-	{
-		"title": "prueba",
-		"description": "esto es una descripcion",
-		"price": 200,
-		"code": "ABC561",
-		"stock": 10,
-		"category": "food",
-		"thumbnails": [
-			"http://localhost:8080/SpaceTimeFlower.png"
-		],
-		"status": true,
-		"id": 18
-	},
-	{
-		"title": "prueba",
-		"description": "esto es una descripcion",
 		"price": 200.5,
 		"code": "ABC5612",
 		"stock": 10,
@@ -199,6 +132,6 @@
 			"http://localhost:8080/SpaceTimeFlower.png"
 		],
 		"status": true,
-		"id": 19
+		"id": 17
 	}
 ]
