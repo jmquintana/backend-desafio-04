@@ -1,137 +1,101 @@
 [
 	{
-		"title": "producto de prueba 2",
-		"description": "Este es un producto de prueba",
-		"price": 10000,
-		"thumbnails": [],
-		"code": "abc456",
-		"stock": 0,
-		"id": 2,
-		"status": false
-	},
-	{
-		"title": "producto de prueba 3",
-		"description": "Este es un producto de prueba",
+		"id": 1,
+		"title": "Zanahoria",
+		"description": "raíz comestible de la planta Daucus carota",
 		"price": 50,
+		"stock": 234,
 		"thumbnails": [],
-		"code": "abc789",
-		"stock": 1000,
-		"id": 3
-	},
-	{
-		"title": "producto de prueba 4",
-		"description": "Este es un producto de prueba",
-		"price": 500,
-		"thumbnails": [],
-		"code": "abc321",
-		"stock": 25,
-		"id": 4
-	},
-	{
-		"title": "producto de prueba 5",
-		"description": "Este es un producto de prueba",
-		"price": 2,
-		"thumbnails": [],
-		"code": "abc632",
-		"stock": 16000,
-		"id": 5
-	},
-	{
-		"title": "producto de prueba 6",
-		"description": "Este es un producto de prueba",
-		"price": 1500,
-		"thumbnails": [],
-		"code": "abc126",
-		"stock": 120,
-		"id": 6
-	},
-	{
-		"title": "producto de prueba 7",
-		"description": "Este es un producto de prueba",
-		"price": 352,
-		"thumbnails": [],
-		"code": "abc458",
-		"stock": 600,
-		"id": 7
-	},
-	{
-		"title": "producto de prueba 8",
-		"description": "Este es un producto de prueba",
-		"price": 451,
-		"thumbnails": [],
-		"code": "abc787",
-		"stock": 1000,
-		"id": 8
-	},
-	{
-		"title": "producto de prueba 9",
-		"description": "Este es un producto de prueba",
-		"price": 400,
-		"thumbnails": [],
-		"code": "abc322",
-		"stock": 250,
-		"id": 9
-	},
-	{
-		"title": "lalala",
-		"description": "Este es un producto de prueba",
-		"price": 200,
-		"thumbnails": [],
-		"code": "abc123456",
-		"stock": 10,
-		"category": "food",
+		"code": "ABC1234",
 		"status": true,
-		"id": 11
+		"category": "verdura"
 	},
 	{
-		"title": "prueba",
-		"description": "esto es una descripcion",
-		"price": "200",
-		"code": "ABC56487",
-		"stock": "10",
-		"category": "food",
+		"id": 2,
+		"title": "Camote",
+		"description": "raíz comestible de la planta Ipomoea batatas",
+		"price": 60,
+		"stock": 432,
 		"thumbnails": [],
+		"code": "DEF5678",
 		"status": true,
-		"id": 14
+		"category": "verdura"
 	},
 	{
-		"title": "prueba",
-		"description": "esto es una descripcion",
-		"price": "200",
-		"code": "ABC5648",
-		"stock": "10",
-		"category": "food",
-		"thumbnails": [
-			"http://localhost:8080/1679259657999-AntaresBlueDiamond.png"
-		],
+		"id": 3,
+		"title": "Cebolla Verde",
+		"description": "planta de la familia de los lirios",
+		"price": 30,
+		"stock": 567,
+		"thumbnails": [],
+		"code": "GHI9012",
 		"status": true,
-		"id": 15
+		"category": "verdura"
 	},
 	{
-		"title": "prueba",
-		"description": "esto es una descripcion",
-		"price": "200",
-		"code": "ABC564",
-		"stock": "10",
-		"category": "food",
-		"thumbnails": [
-			"http://localhost:8080/1679260021487-SpaceTimeCreature.png",
-			"http://localhost:8080/1679260021495-SpaceTimeFlower.png"
-		],
+		"id": 4,
+		"title": "Ejote Verde",
+		"description": "vaina comestible de la planta Phaseolus vulgaris",
+		"price": 40,
+		"stock": 123,
+		"thumbnails": [],
+		"code": "JKL3456",
 		"status": true,
-		"id": 16
+		"category": "verdura"
 	},
 	{
-		"title": "prueba",
-		"description": "esto es una descripcion",
-		"price": 200.5,
-		"code": "ABC5612",
-		"stock": 10,
-		"category": "food",
-		"thumbnails": [
-			"http://localhost:8080/SpaceTimeFlower.png"
-		],
+		"id": 5,
+		"title": "Espinaca",
+		"description": "hoja comestible de la planta Spinacia oleracea",
+		"price": 20,
+		"stock": 345,
+		"thumbnails": [],
+		"code": "MNO7890",
 		"status": true,
-		"id": 17
+		"category": "verdura"
+	},
+	{
+		"id": 6,
+		"title": "Nabo",
+		"description": "raíz comestible de la planta Brassica rapa",
+		"price": 35,
+		"stock": 678,
+		"thumbnails": [],
+		"code": "PQR1234",
+		"status": true,
+		"category": "verdura"
+	},
+	{
+		"id": 7,
+		"title": "Puerro",
+		"description": "planta de la familia de los lirios",
+		"price": 25,
+		"stock": 456,
+		"thumbnails": [],
+		"code": "STU5678",
+		"status": true,
+		"category": "verdura"
+	},
+	{
+		"id": 8,
+		"title": "Rábano",
+		"description": "raíz comestible de la planta Raphanus sativus",
+		"price": 45,
+		"stock": 789,
+		"thumbnails": [],
+		"code": "VWX9012",
+		"status": true,
+		"category": "verdura"
+	},
+	{
+		"id": 9,
+		"title": "Remolacha",
+		"description": "raíz comestible de la planta Beta vulgaris",
+		"price": 55,
+		"stock": 321,
+		"thumbnails": [],
+		"code": "YZA3456",
+		"status": true,
+		"category": "verdura"
 	}
 ]

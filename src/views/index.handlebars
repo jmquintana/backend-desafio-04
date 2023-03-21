@@ -1,12 +1,17 @@
-<div>
-	<div class="title">Lista de productos</div>
-	<div>
-		<ul class="product_list">
+<div class="main-container">
+	<div class="title">LISTA DE PRODUCTOS</div>
+	<div class="list-container">
+		<ul class="product-list">
 			{{#each products}}
-				<li><b>Id:</b>{{this.id}}
+				<li id={{this.id}}>
+					<b>Id:</b>
+					{{this.id}}
 					-
 					<b>Título:</b>
 					{{this.title}}
+					-
+					<b>Categoría:</b>
+					{{this.category}}
 					-
 					<b>Código:</b>
 					{{this.code}}</li>
@@ -15,6 +20,6 @@
 	</div>
 </div>
 
-{{! NO LA ENTIENDO }}
+{{! NO ENTIENDO LA SIGUIENTE: A QUÉ CARPETA/ARCHIVO HACE REFERENCIA? }}
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/index.js"></script>
