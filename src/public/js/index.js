@@ -4,8 +4,14 @@ const addBtn = document.querySelector(".add-btn");
 
 const handleDelete = (event) => {
 	event.stopPropagation();
-	console.log(event.target.id);
-	socket.emit("delete_product", { id: event.target.id });
+	console.log(event.target, event.target.id);
+	const productId = event.target.id;
+	fetch(`/api/products/${productId}`, {
+		method: "DELETE",
+		headers: {
+			"Content-Type": "application/json",
+		},
+	});
 };
 
 productItems.forEach((element) => {

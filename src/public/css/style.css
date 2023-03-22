@@ -70,6 +70,10 @@ li:hover,
 	cursor: pointer;
 }
 
+li > * {
+	pointer-events: none;
+}
+
 .thumbnail {
 	margin-left: 0.5rem;
 	width: 5rem;
