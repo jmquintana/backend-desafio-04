@@ -2,10 +2,28 @@ const socket = io();
 const productItems = document.querySelectorAll(".product-list > li");
 const addBtn = document.querySelector(".add-btn");
 
-const handleDelete = (event) => {
-	event.stopPropagation();
-	console.log(event.target, event.target.id);
-	const productId = event.target.id;
+const random = (max) => {
+	return Math.floor(Math.random() * (max + 1));
+};
+
+const handleAdd = (e) => {
+	e.preventDefault;
+	const randomIndex = random(products.length);
+	const newProduct = products[randomIndex];
+	console.log(newProduct);
+	fetch(`/api/products/`, {
+		method: "POST",
+		body: JSON.stringify(newProduct),
+		headers: {
+			"Content-Type": "application/json",
+		},
+	});
+};
+
+const handleDelete = (e) => {
+	e.stopPropagation();
+	console.log(e.target, e.target.id);
+	const productId = e.target.id;
 	fetch(`/api/products/${productId}`, {
 		method: "DELETE",
 		headers: {
@@ -13,6 +31,8 @@ const handleDelete = (event) => {
 		},
 	});
 };
+
+addBtn.addEventListener("click", handleAdd);
 
 productItems.forEach((element) => {
 	element.addEventListener("click", handleDelete);

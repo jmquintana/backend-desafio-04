@@ -1,1 +1,57 @@
-[]
+[
+	{
+		"title": "Nabo",
+		"description": "raíz comestible de la planta Brassica rapa",
+		"price": 35,
+		"stock": 678,
+		"thumbnails": [],
+		"code": "PQR1234",
+		"category": "verdura",
+		"status": true,
+		"id": 1
+	},
+	{
+		"title": "Cereza",
+		"description": "fruto comestible de la planta Prunus avium",
+		"price": 90,
+		"stock": 345,
+		"thumbnails": [],
+		"code": "GHI9019",
+		"category": "fruta",
+		"status": true,
+		"id": 2
+	},
+	{
+		"title": "Cebolla Verde",
+		"description": "planta de la familia de los lirios",
+		"price": 30,
+		"stock": 567,
+		"thumbnails": [],
+		"code": "GHI9012",
+		"category": "verdura",
+		"status": true,
+		"id": 3
+	},
+	{
+		"title": "Naranja",
+		"description": "fruto comestible de la planta Citrus × sinensis",
+		"price": 130,
+		"stock": 789,
+		"thumbnails": [],
+		"code": "STU5679",
+		"category": "fruta",
+		"status": true,
+		"id": 4
+	},
+	{
+		"title": "Camote",
+		"description": "raíz comestible de la planta Ipomoea batatas",
+		"price": 60,
+		"stock": 432,
+		"thumbnails": [],
+		"code": "DEF5678",
+		"category": "verdura",
+		"status": true,
+		"id": 5
+	}
+]
