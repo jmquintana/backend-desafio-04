@@ -97,5 +97,44 @@
 		"code": "YZA3456",
 		"status": true,
 		"category": "verdura"
+	},
+	{
+		"title": "Cebolla",
+		"description": "planta de la familia de los lirios",
+		"price": 20,
+		"stock": 200,
+		"code": "ACB2341",
+		"category": "verdura",
+		"thumbnails": [],
+		"status": true,
+		"id": 10
+	},
+	{
+		"title": "Cebolla",
+		"description": "planta de la familia de los lirios",
+		"price": 20,
+		"stock": 200,
+		"code": "ACB2342",
+		"category": "verdura",
+		"thumbnails": [
+			"http://localhost:8080/images/AntaresBlueDiamond.png"
+		],
+		"status": true,
+		"id": 11
+	},
+	{
+		"title": "Cebolla",
+		"description": "planta de la familia de los lirios",
+		"price": 20,
+		"stock": 200,
+		"code": "ACB2345",
+		"category": "verdura",
+		"thumbnails": [
+			"http://localhost:8080/images/IceFractalGalaxy.png",
+			"http://localhost:8080/images/SpaceTimeCreature.png",
+			"http://localhost:8080/images/SpaceTimeFlower.png"
+		],
+		"status": true,
+		"id": 12
 	}
 ]

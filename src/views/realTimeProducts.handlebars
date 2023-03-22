@@ -7,22 +7,27 @@
 		<ul class="product-list">
 			{{#each products}}
 				<li id={{this.id}}>
-					<b>Id:</b>
-					{{this.id}}
-					-
-					<b>Título:</b>
-					{{this.title}}
-					-
-					<b>Categoría:</b>
-					{{this.category}}
-					-
-					<b>Código:</b>
-					{{this.code}}</li>
+					<div class="list-item">
+						<b>Id:</b>
+						{{this.id}}
+						-
+						<b>Título:</b>
+						{{this.title}}
+						-
+						<b>Categoría:</b>
+						{{this.category}}
+						-
+						<b>Código:</b>
+						{{this.code}}
+						{{#each this.thumbnails}}
+							<img class="thumbnail" src="{{this}}" />
+						{{/each}}
+					</div>
+				</li>
 			{{/each}}
 		</ul>
 	</div>
 </div>
 
-{{! NO ENTIENDO LA SIGUIENTE: A QUÉ CARPETA/ARCHIVO HACE REFERENCIA? }}
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/index.js"></script>
