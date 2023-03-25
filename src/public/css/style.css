@@ -52,6 +52,7 @@ ul {
 }
 
 .list-item {
+	display: inline-block;
 	width: 100%;
 }
 
@@ -99,13 +100,6 @@ ul {
 
 .hide {
 	display: none;
-}
-
-#custom-target {
-	position: relative;
-	width: 600px;
-	height: 300px;
-	border-style: solid;
 }
 
 .position-absolute {

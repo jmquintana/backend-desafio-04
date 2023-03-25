@@ -3,14 +3,15 @@ const addButton = document.querySelector(".add-btn");
 const deleteButtons = document.querySelectorAll(".delete-btn");
 
 const random = (max) => {
-	return Math.floor(Math.random() * (max + 1));
+	return Math.floor(Math.random() * max);
 };
 
 const handleAdd = (e) => {
 	e.preventDefault;
 	const randomIndex = random(PRODUCTS.length);
+	console.log(randomIndex);
 	const newProduct = PRODUCTS[randomIndex];
-	console.log(newProduct);
+	// console.log(newProduct);
 	fetch(`/api/products/`, {
 		method: "POST",
 		body: JSON.stringify(newProduct),

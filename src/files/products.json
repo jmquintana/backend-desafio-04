@@ -1,46 +1,13 @@
 [
 	{
-		"title": "Remolacha",
-		"description": "raíz comestible de la planta Beta vulgaris",
-		"price": 55,
-		"stock": 321,
+		"title": "Piña",
+		"description": "fruto comestible de la planta Ananas comosus",
+		"price": 150,
+		"stock": 901,
 		"thumbnails": [],
-		"code": "YZA3456",
-		"category": "verdura",
-		"status": true,
-		"id": 1
-	},
-	{
-		"title": "Mango",
-		"description": "fruto comestible de la planta Mangifera indica",
-		"price": 120,
-		"stock": 678,
-		"thumbnails": [],
-		"code": "PQR1239",
+		"code": "YZA3459",
 		"category": "fruta",
 		"status": true,
-		"id": 2
-	},
-	{
-		"title": "Zanahoria",
-		"description": "raíz comestible de la planta Daucus carota",
-		"price": 50,
-		"stock": 234,
-		"thumbnails": [],
-		"code": "ABC1234",
-		"category": "verdura",
-		"status": true,
-		"id": 3
-	},
-	{
-		"title": "Cebolla Verde",
-		"description": "planta de la familia de los lirios",
-		"price": 30,
-		"stock": 567,
-		"thumbnails": [],
-		"code": "GHI9012",
-		"category": "verdura",
-		"status": true,
-		"id": 4
+		"id": 1
 	}
 ]
