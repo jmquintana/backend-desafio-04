@@ -1,36 +1,14 @@
 [
 	{
-		"title": "Pera",
-		"description": "fruto comestible de la planta Pyrus communis",
-		"price": 140,
-		"stock": 890,
+		"title": "Remolacha",
+		"description": "raíz comestible de la planta Beta vulgaris",
+		"price": 55,
+		"stock": 321,
 		"thumbnails": [],
-		"code": "VWX9019",
-		"category": "fruta",
-		"status": true,
-		"id": 10
-	},
-	{
-		"title": "Zanahoria",
-		"description": "raíz comestible de la planta Daucus carota",
-		"price": 50,
-		"stock": 234,
-		"thumbnails": [],
-		"code": "ABC1234",
+		"code": "YZA3456",
 		"category": "verdura",
 		"status": true,
-		"id": 11
-	},
-	{
-		"title": "Fresa",
-		"description": "fruto comestible de la planta Fragaria × ananassa",
-		"price": 100,
-		"stock": 456,
-		"thumbnails": [],
-		"code": "JKL3459",
-		"category": "fruta",
-		"status": true,
-		"id": 12
+		"id": 1
 	},
 	{
 		"title": "Mango",
@@ -41,17 +19,28 @@
 		"code": "PQR1239",
 		"category": "fruta",
 		"status": true,
-		"id": 13
+		"id": 2
 	},
 	{
-		"title": "Espinaca",
-		"description": "hoja comestible de la planta Spinacia oleracea",
-		"price": 20,
-		"stock": 345,
+		"title": "Zanahoria",
+		"description": "raíz comestible de la planta Daucus carota",
+		"price": 50,
+		"stock": 234,
 		"thumbnails": [],
-		"code": "MNO7890",
+		"code": "ABC1234",
 		"category": "verdura",
 		"status": true,
-		"id": 14
+		"id": 3
+	},
+	{
+		"title": "Cebolla Verde",
+		"description": "planta de la familia de los lirios",
+		"price": 30,
+		"stock": 567,
+		"thumbnails": [],
+		"code": "GHI9012",
+		"category": "verdura",
+		"status": true,
+		"id": 4
 	}
 ]

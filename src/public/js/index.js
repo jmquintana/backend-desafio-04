@@ -18,6 +18,7 @@ const handleAdd = (e) => {
 			"Content-Type": "application/json",
 		},
 	});
+	showAlert("Product already exists!", "error");
 };
 
 const handleDelete = (e) => {
@@ -58,7 +59,7 @@ const addProductElement = (product) => {
 	const noProductsNode = document.querySelectorAll(".no-products");
 	noProductsNode.forEach((node) => node.remove());
 
-	showAlert("Product added!");
+	showAlert("Product added!", "success");
 };
 
 const deleteProductElement = (product) => {
@@ -72,10 +73,10 @@ const deleteProductElement = (product) => {
 		noProductsNode.classList.add("no-products");
 		parentNode.appendChild(noProductsNode);
 	}
-	showAlert("Product deleted!");
+	showAlert("Product deleted!", "success");
 };
 
-const showAlert = (message) => {
+const showAlert = (message, icon) => {
 	Swal.fire({
 		text: message,
 		target: "#custom-target",
@@ -85,8 +86,8 @@ const showAlert = (message) => {
 		toast: true,
 		position: "bottom-right",
 		showConfirmButton: false,
-		timer: 1200,
-		icon: "success",
+		timer: 1500,
+		icon: icon,
 	});
 };
 
