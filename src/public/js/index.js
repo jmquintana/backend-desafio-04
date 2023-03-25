@@ -1,5 +1,4 @@
 const socket = io();
-const productItems = document.querySelectorAll(".product-list > li");
 const addButton = document.querySelector(".add-btn");
 const deleteButtons = document.querySelectorAll(".delete-btn");
 
@@ -9,8 +8,8 @@ const random = (max) => {
 
 const handleAdd = (e) => {
 	e.preventDefault;
-	const randomIndex = random(products.length);
-	const newProduct = products[randomIndex];
+	const randomIndex = random(PRODUCTS.length);
+	const newProduct = PRODUCTS[randomIndex];
 	console.log(newProduct);
 	fetch(`/api/products/`, {
 		method: "POST",
@@ -56,14 +55,24 @@ const addProductElement = (product) => {
 		"click",
 		handleDelete
 	);
+	const noProductsNode = document.querySelectorAll(".no-products");
+	noProductsNode.forEach((node) => node.remove());
 };
 
 const deleteProductElement = (product) => {
 	const liToRemove = document.getElementById(product.id);
+	const parentNode = liToRemove.parentNode;
 	liToRemove.remove();
+	const liElements = document.querySelectorAll(".product-list li");
+	if (!liElements.length) {
+		const noProductsNode = document.createElement("div");
+		noProductsNode.innerHTML = `No products loaded!`;
+		noProductsNode.classList.add("no-products");
+		parentNode.appendChild(noProductsNode);
+	}
 };
 
-const products = [
+const PRODUCTS = [
 	{
 		title: "Zanahoria",
 		description: "raíz comestible de la planta Daucus carota",
