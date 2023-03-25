@@ -90,6 +90,7 @@ ul {
 .thumbnail {
 	margin-left: 0.5rem;
 	width: 5rem;
+	border-radius: 3px;
 }
 
 .no-products {

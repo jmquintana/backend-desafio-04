@@ -20,12 +20,12 @@
 							-
 							<b>Código:</b>
 							{{this.code}}
-							{{#each this.thumbnails}}
-								<img class="thumbnail" src="{{this}}" />
-							{{/each}}
 						</div>
 						<div class="delete-btn">Borrar</div>
 					</div>
+					{{#each this.thumbnails}}
+						<img class="thumbnail" src="{{this}}" />
+					{{/each}}
 				</li>
 			{{else}}
 				<div class="no-products">No products loaded!</div>
