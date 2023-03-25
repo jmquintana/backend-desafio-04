@@ -8,62 +8,29 @@
 		"code": "VWX9019",
 		"category": "fruta",
 		"status": true,
-		"id": 1
+		"id": 10
 	},
 	{
-		"title": "Calabaza",
-		"description": "fruto comestible de la planta Cucurbita pepo",
-		"price": 65,
-		"stock": 876,
+		"title": "Zanahoria",
+		"description": "raíz comestible de la planta Daucus carota",
+		"price": 50,
+		"stock": 234,
 		"thumbnails": [],
-		"code": "BCD7890",
+		"code": "ABC1234",
 		"category": "verdura",
 		"status": true,
-		"id": 2
+		"id": 11
 	},
 	{
-		"title": "Cereza",
-		"description": "fruto comestible de la planta Prunus avium",
-		"price": 90,
-		"stock": 345,
+		"title": "Fresa",
+		"description": "fruto comestible de la planta Fragaria × ananassa",
+		"price": 100,
+		"stock": 456,
 		"thumbnails": [],
-		"code": "GHI9019",
+		"code": "JKL3459",
 		"category": "fruta",
 		"status": true,
-		"id": 3
-	},
-	{
-		"title": "Manzana",
-		"description": "fruto comestible de la planta Malus domestica",
-		"price": 70,
-		"stock": 123,
-		"thumbnails": [],
-		"code": "ABC1239",
-		"category": "fruta",
-		"status": true,
-		"id": 4
-	},
-	{
-		"title": "Naranja",
-		"description": "fruto comestible de la planta Citrus × sinensis",
-		"price": 130,
-		"stock": 789,
-		"thumbnails": [],
-		"code": "STU5679",
-		"category": "fruta",
-		"status": true,
-		"id": 5
-	},
-	{
-		"title": "Cebolla Verde",
-		"description": "planta de la familia de los lirios",
-		"price": 30,
-		"stock": 567,
-		"thumbnails": [],
-		"code": "GHI9012",
-		"category": "verdura",
-		"status": true,
-		"id": 6
+		"id": 12
 	},
 	{
 		"title": "Mango",
@@ -74,6 +41,17 @@
 		"code": "PQR1239",
 		"category": "fruta",
 		"status": true,
-		"id": 7
+		"id": 13
+	},
+	{
+		"title": "Espinaca",
+		"description": "hoja comestible de la planta Spinacia oleracea",
+		"price": 20,
+		"stock": 345,
+		"thumbnails": [],
+		"code": "MNO7890",
+		"category": "verdura",
+		"status": true,
+		"id": 14
 	}
 ]

@@ -57,6 +57,8 @@ const addProductElement = (product) => {
 	);
 	const noProductsNode = document.querySelectorAll(".no-products");
 	noProductsNode.forEach((node) => node.remove());
+
+	showAlert("Product added!");
 };
 
 const deleteProductElement = (product) => {
@@ -70,6 +72,22 @@ const deleteProductElement = (product) => {
 		noProductsNode.classList.add("no-products");
 		parentNode.appendChild(noProductsNode);
 	}
+	showAlert("Product deleted!");
+};
+
+const showAlert = (message) => {
+	Swal.fire({
+		text: message,
+		target: "#custom-target",
+		customClass: {
+			container: "position-absolute",
+		},
+		toast: true,
+		position: "bottom-right",
+		showConfirmButton: false,
+		timer: 1200,
+		icon: "success",
+	});
 };
 
 const PRODUCTS = [
