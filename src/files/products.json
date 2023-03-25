@@ -1,1 +1,79 @@
-[]
+[
+	{
+		"title": "Pera",
+		"description": "fruto comestible de la planta Pyrus communis",
+		"price": 140,
+		"stock": 890,
+		"thumbnails": [],
+		"code": "VWX9019",
+		"category": "fruta",
+		"status": true,
+		"id": 1
+	},
+	{
+		"title": "Calabaza",
+		"description": "fruto comestible de la planta Cucurbita pepo",
+		"price": 65,
+		"stock": 876,
+		"thumbnails": [],
+		"code": "BCD7890",
+		"category": "verdura",
+		"status": true,
+		"id": 2
+	},
+	{
+		"title": "Cereza",
+		"description": "fruto comestible de la planta Prunus avium",
+		"price": 90,
+		"stock": 345,
+		"thumbnails": [],
+		"code": "GHI9019",
+		"category": "fruta",
+		"status": true,
+		"id": 3
+	},
+	{
+		"title": "Manzana",
+		"description": "fruto comestible de la planta Malus domestica",
+		"price": 70,
+		"stock": 123,
+		"thumbnails": [],
+		"code": "ABC1239",
+		"category": "fruta",
+		"status": true,
+		"id": 4
+	},
+	{
+		"title": "Naranja",
+		"description": "fruto comestible de la planta Citrus × sinensis",
+		"price": 130,
+		"stock": 789,
+		"thumbnails": [],
+		"code": "STU5679",
+		"category": "fruta",
+		"status": true,
+		"id": 5
+	},
+	{
+		"title": "Cebolla Verde",
+		"description": "planta de la familia de los lirios",
+		"price": 30,
+		"stock": 567,
+		"thumbnails": [],
+		"code": "GHI9012",
+		"category": "verdura",
+		"status": true,
+		"id": 6
+	},
+	{
+		"title": "Mango",
+		"description": "fruto comestible de la planta Mangifera indica",
+		"price": 120,
+		"stock": 678,
+		"thumbnails": [],
+		"code": "PQR1239",
+		"category": "fruta",
+		"status": true,
+		"id": 7
+	}
+]
