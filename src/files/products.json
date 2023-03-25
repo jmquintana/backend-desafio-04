@@ -1,5 +1,16 @@
 [
 	{
+		"title": "Ejote Verde",
+		"description": "vaina comestible de la planta Phaseolus vulgaris",
+		"price": 40,
+		"stock": 123,
+		"thumbnails": [],
+		"code": "JKL3456",
+		"category": "verdura",
+		"status": true,
+		"id": 1
+	},
+	{
 		"title": "Puerro",
 		"description": "planta de la familia de los lirios",
 		"price": 25,
@@ -8,39 +19,39 @@
 		"code": "STU5678",
 		"category": "verdura",
 		"status": true,
-		"id": 1
-	},
-	{
-		"title": "Mango",
-		"description": "fruto comestible de la planta Mangifera indica",
-		"price": 120,
-		"stock": 678,
-		"thumbnails": [],
-		"code": "PQR1239",
-		"category": "fruta",
-		"status": true,
 		"id": 2
 	},
 	{
-		"title": "Uva",
-		"description": "fruto comestible de la planta Vitis vinifera",
-		"price": 160,
-		"stock": 12,
+		"title": "Cereza",
+		"description": "fruto comestible de la planta Prunus avium",
+		"price": 90,
+		"stock": 345,
 		"thumbnails": [],
-		"code": "BCD7899",
+		"code": "GHI9019",
 		"category": "fruta",
 		"status": true,
 		"id": 3
 	},
 	{
-		"title": "Plátano",
-		"description": "fruto comestible de la planta Musa",
-		"price": 80,
-		"stock": 234,
+		"title": "Rábano",
+		"description": "raíz comestible de la planta Raphanus sativus",
+		"price": 45,
+		"stock": 789,
 		"thumbnails": [],
-		"code": "DEF5679",
-		"category": "fruta",
+		"code": "VWX9012",
+		"category": "verdura",
 		"status": true,
 		"id": 4
+	},
+	{
+		"title": "Nabo",
+		"description": "raíz comestible de la planta Brassica rapa",
+		"price": 35,
+		"stock": 678,
+		"thumbnails": [],
+		"code": "PQR1234",
+		"category": "verdura",
+		"status": true,
+		"id": 5
 	}
 ]

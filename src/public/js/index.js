@@ -51,6 +51,11 @@ const addProductElement = (product) => {
 	});
 	liElement.id = product.id;
 	ulElement.appendChild(liElement);
+	const deleteButtons = document.querySelectorAll(".delete-btn");
+	deleteButtons[deleteButtons.length - 1].addEventListener(
+		"click",
+		handleDelete
+	);
 };
 
 const deleteProductElement = (product) => {
