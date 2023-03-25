@@ -1,27 +1,30 @@
 <div class="main-container">
 	<div class="flex-header">
 		<div class="title">LISTA DE PRODUCTOS</div>
-		<div class="add-btn">Agregar...</div>
+		<div class="add-btn">Agregar</div>
 	</div>
 	<div class="list-container">
 		<ul class="product-list">
 			{{#each products}}
 				<li id={{this.id}}>
-					<div class="list-item">
-						<b>Id:</b>
-						{{this.id}}
-						-
-						<b>Título:</b>
-						{{this.title}}
-						-
-						<b>Categoría:</b>
-						{{this.category}}
-						-
-						<b>Código:</b>
-						{{this.code}}
-						{{#each this.thumbnails}}
-							<img class="thumbnail" src="{{this}}" />
-						{{/each}}
+					<div class="list-item-group">
+						<div class="list-item">
+							<b>Id:</b>
+							{{this.id}}
+							-
+							<b>Título:</b>
+							{{this.title}}
+							-
+							<b>Categoría:</b>
+							{{this.category}}
+							-
+							<b>Código:</b>
+							{{this.code}}
+							{{#each this.thumbnails}}
+								<img class="thumbnail" src="{{this}}" />
+							{{/each}}
+						</div>
+						<div class="delete-btn">Borrar</div>
 					</div>
 				</li>
 			{{else}}

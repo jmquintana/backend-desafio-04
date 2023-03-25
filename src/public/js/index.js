@@ -1,6 +1,7 @@
 const socket = io();
 const productItems = document.querySelectorAll(".product-list > li");
-const addBtn = document.querySelector(".add-btn");
+const addButton = document.querySelector(".add-btn");
+const deleteButtons = document.querySelectorAll(".delete-btn");
 
 const random = (max) => {
 	return Math.floor(Math.random() * (max + 1));
@@ -22,8 +23,8 @@ const handleAdd = (e) => {
 
 const handleDelete = (e) => {
 	e.stopPropagation();
-	console.log(e.target, e.target.id);
-	const productId = e.target.id;
+	const productId = e.target.parentNode.parentNode.id;
+	console.log(e.target.parentNode.parentNode, productId);
 	fetch(`/api/products/${productId}`, {
 		method: "DELETE",
 		headers: {
@@ -32,9 +33,9 @@ const handleDelete = (e) => {
 	});
 };
 
-addBtn.addEventListener("click", handleAdd);
+addButton.addEventListener("click", handleAdd);
 
-productItems.forEach((element) => {
+deleteButtons.forEach((element) => {
 	element.addEventListener("click", handleDelete);
 });
 
@@ -44,7 +45,7 @@ socket.on("product_deleted", (data) => deleteProductElement(data.result));
 const addProductElement = (product) => {
 	const ulElement = document.querySelector(".product-list");
 	const liElement = document.createElement("li");
-	liElement.innerHTML = `<div class="list-item"><b>Id:</b>${product.id} - <b>Título:</b>	${product.title} - <b>Categoría:</b> ${product.category} - <b>Código:</b> ${product.code}</div>`;
+	liElement.innerHTML = `<div class="list-item-group"><div class="list-item"><b>Id: </b>${product.id} - <b>Título:</b>	${product.title} - <b>Categoría:</b> ${product.category} - <b>Código:</b> ${product.code}</div><div class="delete-btn">Borrar</div></div>`;
 	product.thumbnails.forEach((thumbnail) => {
 		liElement.innerHTML += `<img class="thumbnail" src="${thumbnail}" />`;
 	});
