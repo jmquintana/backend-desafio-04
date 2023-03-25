@@ -9,17 +9,18 @@ const random = (max) => {
 const handleAdd = (e) => {
 	e.preventDefault;
 	const randomIndex = random(PRODUCTS.length);
-	console.log(randomIndex);
 	const newProduct = PRODUCTS[randomIndex];
-	// console.log(newProduct);
-	fetch(`/api/products/`, {
+	fetch("/api/products/", {
 		method: "POST",
 		body: JSON.stringify(newProduct),
 		headers: {
 			"Content-Type": "application/json",
 		},
+	}).then((response) => {
+		if (!response.ok) {
+			showAlert("Product already exists!", "error");
+		}
 	});
-	showAlert("Product already exists!", "error");
 };
 
 const handleDelete = (e) => {

@@ -1,5 +1,16 @@
 [
 	{
+		"title": "Fresa",
+		"description": "fruto comestible de la planta Fragaria × ananassa",
+		"price": 100,
+		"stock": 456,
+		"thumbnails": [],
+		"code": "JKL3459",
+		"category": "fruta",
+		"status": true,
+		"id": 1
+	},
+	{
 		"title": "Piña",
 		"description": "fruto comestible de la planta Ananas comosus",
 		"price": 150,
@@ -8,6 +19,127 @@
 		"code": "YZA3459",
 		"category": "fruta",
 		"status": true,
-		"id": 1
+		"id": 2
+	},
+	{
+		"title": "Puerro",
+		"description": "planta de la familia de los lirios",
+		"price": 25,
+		"stock": 456,
+		"thumbnails": [],
+		"code": "STU5678",
+		"category": "verdura",
+		"status": true,
+		"id": 3
+	},
+	{
+		"title": "Remolacha",
+		"description": "raíz comestible de la planta Beta vulgaris",
+		"price": 55,
+		"stock": 321,
+		"thumbnails": [],
+		"code": "YZA3456",
+		"category": "verdura",
+		"status": true,
+		"id": 4
+	},
+	{
+		"title": "Manzana",
+		"description": "fruto comestible de la planta Malus domestica",
+		"price": 70,
+		"stock": 123,
+		"thumbnails": [],
+		"code": "ABC1239",
+		"category": "fruta",
+		"status": true,
+		"id": 5
+	},
+	{
+		"title": "Ejote Verde",
+		"description": "vaina comestible de la planta Phaseolus vulgaris",
+		"price": 40,
+		"stock": 123,
+		"thumbnails": [],
+		"code": "JKL3456",
+		"category": "verdura",
+		"status": true,
+		"id": 6
+	},
+	{
+		"title": "Rábano",
+		"description": "raíz comestible de la planta Raphanus sativus",
+		"price": 45,
+		"stock": 789,
+		"thumbnails": [],
+		"code": "VWX9012",
+		"category": "verdura",
+		"status": true,
+		"id": 7
+	},
+	{
+		"title": "Mango",
+		"description": "fruto comestible de la planta Mangifera indica",
+		"price": 120,
+		"stock": 678,
+		"thumbnails": [],
+		"code": "PQR1239",
+		"category": "fruta",
+		"status": true,
+		"id": 8
+	},
+	{
+		"title": "Kiwi",
+		"description": "fruto comestible de la planta Actinidia deliciosa",
+		"price": 110,
+		"stock": 567,
+		"thumbnails": [],
+		"code": "MNO7899",
+		"category": "fruta",
+		"status": true,
+		"id": 9
+	},
+	{
+		"title": "Uva",
+		"description": "fruto comestible de la planta Vitis vinifera",
+		"price": 160,
+		"stock": 12,
+		"thumbnails": [],
+		"code": "BCD7899",
+		"category": "fruta",
+		"status": true,
+		"id": 10
+	},
+	{
+		"title": "Naranja",
+		"description": "fruto comestible de la planta Citrus × sinensis",
+		"price": 130,
+		"stock": 789,
+		"thumbnails": [],
+		"code": "STU5679",
+		"category": "fruta",
+		"status": true,
+		"id": 11
+	},
+	{
+		"title": "Plátano",
+		"description": "fruto comestible de la planta Musa",
+		"price": 80,
+		"stock": 234,
+		"thumbnails": [],
+		"code": "DEF5679",
+		"category": "fruta",
+		"status": true,
+		"id": 12
+	},
+	{
+		"title": "Camote",
+		"description": "raíz comestible de la planta Ipomoea batatas",
+		"price": 60,
+		"stock": 432,
+		"thumbnails": [],
+		"code": "DEF5678",
+		"category": "verdura",
+		"status": true,
+		"id": 13
 	}
 ]
