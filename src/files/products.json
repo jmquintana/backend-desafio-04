@@ -1,97 +1,5 @@
 [
 	{
-		"title": "Camote",
-		"description": "raíz comestible de la planta Ipomoea batatas",
-		"price": 60,
-		"stock": 432,
-		"thumbnails": [],
-		"code": "DEF5678",
-		"category": "verdura",
-		"status": true,
-		"id": 7
-	},
-	{
-		"title": "Kiwi",
-		"description": "fruto comestible de la planta Actinidia deliciosa",
-		"price": 110,
-		"stock": 567,
-		"thumbnails": [],
-		"code": "MNO7899",
-		"category": "fruta",
-		"status": true,
-		"id": 8
-	},
-	{
-		"title": "Cereza",
-		"description": "fruto comestible de la planta Prunus avium",
-		"price": 90,
-		"stock": 345,
-		"thumbnails": [],
-		"code": "GHI9019",
-		"category": "fruta",
-		"status": true,
-		"id": 9
-	},
-	{
-		"title": "Ejote Verde",
-		"description": "vaina comestible de la planta Phaseolus vulgaris",
-		"price": 40,
-		"stock": 123,
-		"thumbnails": [],
-		"code": "JKL3456",
-		"category": "verdura",
-		"status": true,
-		"id": 10
-	},
-	{
-		"title": "Plátano",
-		"description": "fruto comestible de la planta Musa",
-		"price": 80,
-		"stock": 234,
-		"thumbnails": [],
-		"code": "DEF5679",
-		"category": "fruta",
-		"status": true,
-		"id": 11
-	},
-	{
-		"title": "Puerro",
-		"description": "planta de la familia de los lirios",
-		"price": 230,
-		"stock": 1000,
-		"code": "STU5679",
-		"category": "verdura",
-		"thumbnails": [
-			"http://localhost:8080/images/SpaceTimeBeauty.png",
-			"http://localhost:8080/images/SpaceTimeCreature.png",
-			"http://localhost:8080/images/SpaceTimeFlower.png"
-		],
-		"status": true,
-		"id": 12
-	},
-	{
-		"title": "Espinaca",
-		"description": "hoja comestible de la planta Spinacia oleracea",
-		"price": 20,
-		"stock": 345,
-		"thumbnails": [],
-		"code": "MNO7890",
-		"category": "verdura",
-		"status": true,
-		"id": 13
-	},
-	{
-		"title": "Nabo",
-		"description": "raíz comestible de la planta Brassica rapa",
-		"price": 35,
-		"stock": 678,
-		"thumbnails": [],
-		"code": "PQR1234",
-		"category": "verdura",
-		"status": true,
-		"id": 14
-	},
-	{
 		"title": "Puerro",
 		"description": "planta de la familia de los lirios",
 		"price": 230,
@@ -120,16 +28,56 @@
 	{
 		"title": "Puerro",
 		"description": "planta de la familia de los lirios",
-		"price": 230,
-		"stock": 1000,
-		"code": "STU5674",
+		"price": 25,
+		"stock": 456,
+		"thumbnails": [],
+		"code": "STU5678",
 		"category": "verdura",
-		"thumbnails": [
-			"http://localhost:8080/images/AntaresBlueDiamondKriptonite.png",
-			"http://localhost:8080/images/BismuthGalaxyNebula.png",
-			"http://localhost:8080/images/IceFractalGalaxy.png"
-		],
 		"status": true,
-		"id": 17
+		"id": 20
+	},
+	{
+		"title": "Zanahoria",
+		"description": "raíz comestible de la planta Daucus carota",
+		"price": 50,
+		"stock": 234,
+		"thumbnails": [],
+		"code": "ABC1234",
+		"category": "verdura",
+		"status": true,
+		"id": 21
+	},
+	{
+		"title": "Plátano",
+		"description": "fruto comestible de la planta Musa",
+		"price": 80,
+		"stock": 234,
+		"thumbnails": [],
+		"code": "DEF5679",
+		"category": "fruta",
+		"status": true,
+		"id": 22
+	},
+	{
+		"title": "Manzana",
+		"description": "fruto comestible de la planta Malus domestica",
+		"price": 70,
+		"stock": 123,
+		"thumbnails": [],
+		"code": "ABC1239",
+		"category": "fruta",
+		"status": true,
+		"id": 23
+	},
+	{
+		"title": "Mango",
+		"description": "fruto comestible de la planta Mangifera indica",
+		"price": 120,
+		"stock": 678,
+		"thumbnails": [],
+		"code": "PQR1239",
+		"category": "fruta",
+		"status": true,
+		"id": 24
 	}
 ]

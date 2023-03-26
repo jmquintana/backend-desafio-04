@@ -1,6 +1,13 @@
 const socket = io();
 const addButton = document.querySelector(".add-btn");
 const deleteButtons = document.querySelectorAll(".delete-btn");
+const formContainer = document.querySelector(".form-container");
+
+formContainer.addEventListener("click", (e) => {
+	e.preventDefault();
+	const targetClass = e.target.classList[0];
+	if (targetClass === "form-container") formContainer.classList.add("hide");
+});
 
 const random = (max) => {
 	return Math.floor(Math.random() * max);
@@ -35,7 +42,12 @@ const handleDelete = (e) => {
 	});
 };
 
-addButton.addEventListener("click", handleAdd);
+const handleAdd2 = (e) => {
+	e.preventDefault();
+	formContainer.classList.remove("hide");
+};
+
+addButton.addEventListener("click", handleAdd2);
 
 deleteButtons.forEach((element) => {
 	element.addEventListener("click", handleDelete);

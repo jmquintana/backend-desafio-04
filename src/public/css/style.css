@@ -8,22 +8,20 @@
 }
 
 body {
-	margin: 1rem;
-	padding: 1rem;
 	color: rgba(50, 50, 50, 1);
 }
 
-.main-container {
+.products-main-container {
 	width: fit-content;
 	min-width: 75vw;
-	padding: 1rem;
 }
 
-.flex-header {
+.list-header {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
+	padding: 1rem;
 }
 
 .title {
@@ -38,6 +36,7 @@ body {
 
 .list-container {
 	width: 100%;
+	padding: 1rem;
 }
 
 ul {
@@ -99,10 +98,165 @@ ul {
 	width: 50vw;
 }
 
-.hide {
-	display: none;
-}
-
 .position-absolute {
 	position: absolute !important;
+}
+
+/* form container */
+/* body {
+	background-color: #000;
+	height: 100vh;
+} */
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.2);
+	/* border-radius: 16px; */
+	/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+	/* background-color: rgba(200, 200, 200, 0.8); */
+}
+
+.form {
+	background-color: #15172b;
+	border-radius: 20px;
+	box-sizing: border-box;
+	height: 800px;
+	padding: 20px;
+	width: 480px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.title {
+	color: #eee;
+	font-family: sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+.subtitle {
+	color: #eee;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.input-container {
+	height: 50px;
+	position: relative;
+	width: 100%;
+}
+
+.ic1 {
+	margin-top: 40px;
+}
+
+.ic2 {
+	margin-top: 20px;
+}
+
+.input {
+	background-color: #303245;
+	border-radius: 12px;
+	border: 0;
+	box-sizing: border-box;
+	color: #eee;
+	font-size: 18px;
+	height: 100%;
+	outline: 0;
+	padding: 4px 20px 0;
+	width: 100%;
+}
+
+.cut {
+	background-color: #15172b;
+	border-radius: 10px;
+	height: 20px;
+	left: 20px;
+	position: absolute;
+	top: -20px;
+	transform: translateY(0);
+	transition: transform 200ms;
+	width: 76px;
+}
+
+.cut-short {
+	width: 52px;
+}
+
+.cut-middle {
+	width: 60px;
+}
+
+.cut-large {
+	width: 90px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+	transform: translateY(8px);
+}
+
+.placeholder {
+	color: #65657b;
+	font-family: sans-serif;
+	left: 20px;
+	line-height: 14px;
+	pointer-events: none;
+	position: absolute;
+	transform-origin: 0 50%;
+	transition: transform 200ms, color 200ms;
+	top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+	transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+	color: #808097;
+}
+
+.input:focus ~ .placeholder {
+	color: #08d;
+}
+
+.submit {
+	background-color: #08d;
+	border-radius: 12px;
+	border: 0;
+	box-sizing: border-box;
+	color: #eee;
+	cursor: pointer;
+	font-size: 18px;
+	height: 50px;
+	margin-top: 38px;
+	outline: 0;
+	text-align: center;
+	width: 100%;
+	transition: background-color ease 0.15s;
+}
+
+.submit:hover {
+	background-color: #0af;
+}
+
+.submit:active {
+	background-color: #06b;
+}
+
+.hide {
+	display: none;
 }
