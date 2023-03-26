@@ -1,6 +1,7 @@
 const socket = io();
 const openModalBtn = document.querySelector(".open-modal-btn");
 const deleteButtons = document.querySelectorAll(".delete-btn");
+const modal = document.querySelector(".modal");
 const form = document.querySelector(".form");
 const overlay = document.querySelector(".overlay");
 const browseButton = document.querySelector(".browse-btn");
@@ -8,11 +9,13 @@ const addProductBtn = document.querySelector(".submit");
 
 const openModal = () => {
 	form.classList.remove("hidden");
+	modal.classList.remove("hidden");
 	overlay.classList.remove("hidden");
 };
 
 const closeModal = () => {
 	form.classList.add("hidden");
+	modal.classList.add("hidden");
 	overlay.classList.add("hidden");
 };
 

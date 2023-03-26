@@ -16,9 +16,19 @@ body {
 	position: relative;
 }
 
+.main-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100vw;
+	margin: 1rem;
+}
+
 .products-main-container {
-	width: fit-content;
-	min-width: 75vw;
+	/* width: fit-content; */
+	width: 90%;
+	max-width: 1200px;
+	/* min-width: 1200px; */
 }
 
 .list-header {
@@ -108,11 +118,25 @@ ul {
 	position: absolute !important;
 }
 
-.form {
-	position: absolute;
+.modal {
+	left: 0;
+	top: 0;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	width: 100vw;
+	height: 100vh;
 	z-index: 2;
-	top: 5%;
-	left: 40%;
+}
+
+.form {
+	/* position: absolute; */
+	/* top: 5%; */
+	/* left: 40%; */
+	z-index: 3;
+	pointer-events: auto;
 	background-color: #15172b;
 	border-radius: 20px;
 	box-sizing: border-box;
@@ -279,6 +303,7 @@ ul {
 }
 
 .overlay {
+	z-index: 1;
 	position: fixed;
 	top: 0;
 	bottom: 0;
