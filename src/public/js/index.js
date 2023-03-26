@@ -1,13 +1,24 @@
 const socket = io();
-const addButton = document.querySelector(".add-btn");
+const openModalBtn = document.querySelector(".open-modal-btn");
 const deleteButtons = document.querySelectorAll(".delete-btn");
-const formContainer = document.querySelector(".form-container");
+const form = document.querySelector(".form");
+const overlay = document.querySelector(".overlay");
+const browseButton = document.querySelector(".browse-btn");
+const addProductBtn = document.querySelector(".submit");
 
-formContainer.addEventListener("click", (e) => {
-	e.preventDefault();
-	const targetClass = e.target.classList[0];
-	if (targetClass === "form-container") formContainer.classList.add("hide");
-});
+const openModal = () => {
+	form.classList.remove("hidden");
+	overlay.classList.remove("hidden");
+};
+
+const closeModal = () => {
+	form.classList.add("hidden");
+	overlay.classList.add("hidden");
+};
+
+overlay.addEventListener("click", closeModal);
+addProductBtn.addEventListener("click", closeModal);
+openModalBtn.addEventListener("click", openModal);
 
 const random = (max) => {
 	return Math.floor(Math.random() * max);
@@ -42,12 +53,31 @@ const handleDelete = (e) => {
 	});
 };
 
-const handleAdd2 = (e) => {
+browseButton.addEventListener("click", (e) => {
 	e.preventDefault();
-	formContainer.classList.remove("hide");
-};
+	console.log(e);
+});
 
-addButton.addEventListener("click", handleAdd2);
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+	const myFormData = new FormData(e.target);
+	const formDataObj = {};
+	myFormData.forEach((value, key) => (formDataObj[key] = value));
+	console.log(formDataObj);
+
+	fetch("/api/products", {
+		method: "POST",
+		body: JSON.stringify(formDataObj),
+		headers: {
+			"Content-Type": "application/json",
+		},
+	}).then((response) => {
+		if (!response.ok) {
+			console.log(response);
+			showAlert("Product already exists!", "error");
+		}
+	});
+});
 
 deleteButtons.forEach((element) => {
 	element.addEventListener("click", handleDelete);

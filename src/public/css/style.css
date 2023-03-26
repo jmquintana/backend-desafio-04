@@ -9,6 +9,11 @@
 
 body {
 	color: rgba(50, 50, 50, 1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 
 .products-main-container {
@@ -24,14 +29,15 @@ body {
 	padding: 1rem;
 }
 
-.title {
-	font-weight: 700;
+.list-title {
 	margin: 1rem 0.6rem 1rem 0.6rem;
-	/* margin-top: 1rem; */
-	/* margin-bottom: 1rem; */
-	color: #222;
-	text-shadow: 0px 1px 2px #555;
-	font-size: larger;
+	/* text-shadow: 0px 1px 2px #555; */
+
+	color: #15172b;
+	font-family: sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	margin-top: 30px;
 }
 
 .list-container {
@@ -56,7 +62,7 @@ ul {
 }
 
 .list-item,
-.add-btn,
+.open-modal-btn,
 .delete-btn {
 	background-color: #eee;
 	border-radius: 3px;
@@ -69,7 +75,7 @@ ul {
 }
 
 .delete-btn,
-.add-btn {
+.open-modal-btn {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -80,7 +86,7 @@ ul {
 }
 
 .delete-btn:hover,
-.add-btn:hover {
+.open-modal-btn:hover {
 	background-color: #ddd;
 	color: #222;
 	cursor: pointer;
@@ -102,30 +108,11 @@ ul {
 	position: absolute !important;
 }
 
-/* form container */
-/* body {
-	background-color: #000;
-	height: 100vh;
-} */
-
-.form-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	/* From https://css.glass */
-	background: rgba(255, 255, 255, 0.2);
-	/* border-radius: 16px; */
-	/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
-	/* background-color: rgba(200, 200, 200, 0.8); */
-}
-
 .form {
+	position: absolute;
+	z-index: 2;
+	top: 5%;
+	left: 40%;
 	background-color: #15172b;
 	border-radius: 20px;
 	box-sizing: border-box;
@@ -136,7 +123,7 @@ ul {
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.title {
+.form-title {
 	color: #eee;
 	font-family: sans-serif;
 	font-size: 36px;
@@ -291,6 +278,19 @@ ul {
 	background-color: #06b;
 }
 
-.hide {
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
+.hidden {
 	display: none;
 }

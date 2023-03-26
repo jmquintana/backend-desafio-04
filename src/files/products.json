@@ -1,83 +1,24 @@
 [
 	{
-		"title": "Puerro",
-		"description": "planta de la familia de los lirios",
-		"price": 230,
+		"title": "manzana",
+		"description": "fruta del árbol manzanero",
+		"category": "fruta",
+		"code": "ASD6545",
+		"price": 123,
 		"stock": 1000,
-		"code": "STU5677",
-		"category": "verdura",
-		"thumbnails": [
-			"http://localhost:8080/images/AntaresBlueDiamondKriptonite.png",
-			"http://localhost:8080/images/BismuthGalaxyNebula.png",
-			"http://localhost:8080/images/IceFractalGalaxy.png"
-		],
+		"thumbnails": [],
 		"status": true,
-		"id": 15
+		"id": 1
 	},
 	{
-		"title": "Calabaza",
-		"description": "fruto comestible de la planta Cucurbita pepo",
-		"price": 65,
-		"stock": 876,
-		"thumbnails": [],
-		"code": "BCD7890",
-		"category": "verdura",
-		"status": true,
-		"id": 16
-	},
-	{
-		"title": "Puerro",
-		"description": "planta de la familia de los lirios",
-		"price": 25,
-		"stock": 456,
-		"thumbnails": [],
-		"code": "STU5678",
-		"category": "verdura",
-		"status": true,
-		"id": 20
-	},
-	{
-		"title": "Zanahoria",
-		"description": "raíz comestible de la planta Daucus carota",
-		"price": 50,
-		"stock": 234,
-		"thumbnails": [],
-		"code": "ABC1234",
-		"category": "verdura",
-		"status": true,
-		"id": 21
-	},
-	{
-		"title": "Plátano",
-		"description": "fruto comestible de la planta Musa",
-		"price": 80,
-		"stock": 234,
-		"thumbnails": [],
-		"code": "DEF5679",
+		"title": "manzana",
+		"description": "fruta del árbol manzanero",
 		"category": "fruta",
-		"status": true,
-		"id": 22
-	},
-	{
-		"title": "Manzana",
-		"description": "fruto comestible de la planta Malus domestica",
-		"price": 70,
-		"stock": 123,
+		"code": "ASD6541",
+		"price": 123,
+		"stock": 1000,
 		"thumbnails": [],
-		"code": "ABC1239",
-		"category": "fruta",
 		"status": true,
-		"id": 23
-	},
-	{
-		"title": "Mango",
-		"description": "fruto comestible de la planta Mangifera indica",
-		"price": 120,
-		"stock": 678,
-		"thumbnails": [],
-		"code": "PQR1239",
-		"category": "fruta",
-		"status": true,
-		"id": 24
+		"id": 2
 	}
 ]
