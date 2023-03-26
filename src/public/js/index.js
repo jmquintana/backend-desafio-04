@@ -11,6 +11,7 @@ const openModal = () => {
 	form.classList.remove("hidden");
 	modal.classList.remove("hidden");
 	overlay.classList.remove("hidden");
+	populateForm(form, PRODUCTS[random(PRODUCTS.length)]);
 };
 
 const closeModal = () => {
@@ -135,6 +136,14 @@ const showAlert = (message, icon) => {
 		showConfirmButton: false,
 		timer: 1500,
 		icon: icon,
+	});
+};
+
+const populateForm = (form, data) => {
+	const formElements = [...form.elements];
+	formElements.forEach((element) => {
+		const id = element.id;
+		element.value = data[id];
 	});
 };
 
