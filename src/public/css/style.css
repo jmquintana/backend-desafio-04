@@ -1,10 +1,26 @@
+:root {
+	--A-color: #00629b;
+	--B-color: #00843d;
+	--C-color: #64a70b;
+	--D-color: #63666a;
+	--E-color: #69b3e7;
+	--F-color: #93328e;
+	--G-color: #ea7600;
+	--H-color: #f1c400;
+	--I-color: #8e8c13;
+	--J-color: #003c71;
+	--K-color: #5d2a2c;
+	--L-color: #59315f;
+	--M-color: #16172b;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana,
 		sans-serif;
-	font-size: large;
+	font-size: medium;
 }
 
 body {
@@ -25,10 +41,8 @@ body {
 }
 
 .products-main-container {
-	/* width: fit-content; */
 	width: 90%;
 	max-width: 1200px;
-	/* min-width: 1200px; */
 }
 
 .list-header {
@@ -45,7 +59,7 @@ body {
 
 	color: #15172b;
 	font-family: sans-serif;
-	font-size: 36px;
+	font-size: 1.5rem;
 	font-weight: 600;
 	margin-top: 30px;
 }
@@ -74,14 +88,30 @@ ul {
 .list-item,
 .open-modal-btn,
 .delete-btn {
-	background-color: #eee;
-	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	border-radius: 12px;
 	padding: 0.4rem;
+	padding: 4px 20px 0;
 	margin: 0.3rem 0.6rem 0.3rem 0.6rem;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	color: #444;
-	text-shadow: 0px 1px 2px #fff;
+}
+
+.list-item,
+.delete-btn {
+	background-color: #eee;
+}
+
+.open-modal-btn {
+	color: #efefef;
+	background-color: var(--A-color);
+}
+
+.open-modal-btn:active {
+	filter: brightness(90%);
 }
 
 .delete-btn,
@@ -92,13 +122,15 @@ ul {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	font-weight: 700;
+	font-weight: 600;
 }
 
-.delete-btn:hover,
+.delete-btn:hover {
+	filter: brightness(90%);
+	cursor: pointer;
+}
 .open-modal-btn:hover {
-	background-color: #ddd;
-	color: #222;
+	filter: brightness(110%);
 	cursor: pointer;
 }
 
@@ -137,10 +169,10 @@ ul {
 	/* left: 40%; */
 	z-index: 3;
 	pointer-events: auto;
-	background-color: #15172b;
+	background-color: var(--M-color);
 	border-radius: 20px;
 	box-sizing: border-box;
-	height: 800px;
+	/* height: 800px; */
 	padding: 20px;
 	width: 480px;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -150,7 +182,7 @@ ul {
 .form-title {
 	color: #eee;
 	font-family: sans-serif;
-	font-size: 36px;
+	font-size: 1.5rem;
 	font-weight: 600;
 	margin-top: 30px;
 }
@@ -158,20 +190,20 @@ ul {
 .subtitle {
 	color: #eee;
 	font-family: sans-serif;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 1rem;
+	font-weight: 300;
 	margin-top: 10px;
 }
 
 .input-container {
-	height: 50px;
+	height: 40px;
 	position: relative;
 	width: 100%;
 }
 
 .input-container-thumbnails {
 	display: flex;
-	height: 50px;
+	height: 40px;
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
@@ -192,7 +224,7 @@ ul {
 	border: 0;
 	box-sizing: border-box;
 	color: #eee;
-	font-size: 18px;
+	font-size: 1rem;
 	height: 100%;
 	outline: 0;
 	padding: 4px 20px 0;
@@ -200,12 +232,12 @@ ul {
 }
 
 .cut {
-	background-color: #15172b;
+	background-color: var(--M-color);
 	border-radius: 10px;
-	height: 20px;
+	height: 15px;
 	left: 20px;
 	position: absolute;
-	top: -20px;
+	top: -15px;
 	transform: translateY(0);
 	transition: transform 200ms;
 	width: 76px;
@@ -224,28 +256,29 @@ ul {
 }
 
 .browse-btn {
-	background-color: #303245;
+	font-weight: 600;
 	border-radius: 12px;
 	border: 0;
 	box-sizing: border-box;
 	color: #eee;
-	font-size: 18px;
+	font-size: 1rem;
 	height: 100%;
 	outline: 0;
 	padding: 4px 20px 0;
 	margin-left: 0.8rem;
 	cursor: pointer;
 	text-align: center;
-	background-color: #08d;
+	background-color: var(--A-color);
 	transition: background-color ease 0.15s;
 }
 
 .browse-btn:hover {
-	background-color: #0af;
+	filter: brightness(110%);
+	cursor: pointer;
 }
 
 .browse-btn:active {
-	background-color: #06b;
+	filter: brightness(90%);
 }
 
 .input:focus ~ .cut,
@@ -254,7 +287,7 @@ ul {
 }
 
 .placeholder {
-	color: #65657b;
+	color: var(--D-color);
 	font-family: sans-serif;
 	left: 20px;
 	line-height: 14px;
@@ -262,12 +295,12 @@ ul {
 	position: absolute;
 	transform-origin: 0 50%;
 	transition: transform 200ms, color 200ms;
-	top: 20px;
+	top: 15px;
 }
 
 .input:focus ~ .placeholder,
 .input:not(:placeholder-shown) ~ .placeholder {
-	transform: translateY(-30px) translateX(10px) scale(0.75);
+	transform: translateY(-25px) translateX(10px) scale(0.75);
 }
 
 .input:not(:placeholder-shown) ~ .placeholder {
@@ -275,18 +308,19 @@ ul {
 }
 
 .input:focus ~ .placeholder {
-	color: #08d;
+	color: var(--E-color);
 }
 
 .submit {
-	background-color: #08d;
+	background-color: var(--A-color);
+	font-weight: 600;
 	border-radius: 12px;
 	border: 0;
 	box-sizing: border-box;
 	color: #eee;
 	cursor: pointer;
-	font-size: 18px;
-	height: 50px;
+	font-size: 1rem;
+	height: 40px;
 	margin-top: 38px;
 	outline: 0;
 	text-align: center;
@@ -295,11 +329,12 @@ ul {
 }
 
 .submit:hover {
-	background-color: #0af;
+	filter: brightness(110%);
+	cursor: pointer;
 }
 
 .submit:active {
-	background-color: #06b;
+	filter: brightness(90%);
 }
 
 .overlay {
@@ -311,9 +346,9 @@ ul {
 	right: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(3px);
-	-webkit-backdrop-filter: blur(5px);
+	background: rgba(120, 120, 120, 0.2);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 }
 
 .hidden {

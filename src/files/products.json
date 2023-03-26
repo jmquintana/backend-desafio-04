@@ -14,22 +14,33 @@
 		"title": "manzana",
 		"description": "fruta del árbol manzanero",
 		"category": "fruta",
-		"code": "ASD6547",
+		"code": "ASD6544",
 		"price": 123,
 		"stock": 1000,
 		"thumbnails": [],
 		"status": true,
-		"id": 2
+		"id": 4
 	},
 	{
 		"title": "manzana",
 		"description": "fruta del árbol manzanero",
 		"category": "fruta",
-		"code": "ASD6543",
+		"code": "ASD6541",
 		"price": 123,
 		"stock": 1000,
 		"thumbnails": [],
 		"status": true,
-		"id": 3
+		"id": 5
+	},
+	{
+		"title": "manzana",
+		"description": "fruta del árbol manzanero",
+		"category": "fruta",
+		"code": "ASD654",
+		"price": 123,
+		"stock": 1000,
+		"thumbnails": [],
+		"status": true,
+		"id": 6
 	}
 ]
