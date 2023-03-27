@@ -12,6 +12,7 @@ const openModal = () => {
 	modal.classList.remove("hidden");
 	overlay.classList.remove("hidden");
 	populateForm(form, PRODUCTS[random(PRODUCTS.length)]);
+	addProductBtn.focus();
 };
 
 const closeModal = () => {
@@ -91,14 +92,14 @@ socket.on("product_added", (data) => addProductElement(data.result));
 socket.on("product_deleted", (data) => deleteProductElement(data.result));
 
 const addProductElement = (product) => {
-	const ulElement = document.querySelector(".product-list");
-	const liElement = document.createElement("li");
-	liElement.innerHTML = `<div class="list-item-group"><div class="list-item"><b>Id: </b>${product.id} - <b>Título:</b>	${product.title} - <b>Categoría:</b> ${product.category} - <b>Código:</b> ${product.code}</div><div class="delete-btn">Borrar</div></div>`;
+	const groupListElement = document.querySelector(".product-list");
+	const listElement = document.createElement("div");
+	listElement.innerHTML = `<div class="list-item-group"><div class="list-item"><b>Id: </b>${product.id} <b>Producto:</b>	${product.title} <b>Categoría:</b> ${product.category} <b>Código:</b> ${product.code}</div><div class="delete-btn">Borrar</div></div>`;
 	product.thumbnails.forEach((thumbnail) => {
-		liElement.innerHTML += `<img class="thumbnail" src="${thumbnail}" />`;
+		listElement.innerHTML += `<img class="thumbnail" src="${thumbnail}" />`;
 	});
-	liElement.id = product.id;
-	ulElement.appendChild(liElement);
+	listElement.id = product.id;
+	groupListElement.appendChild(listElement);
 	const deleteButtons = document.querySelectorAll(".delete-btn");
 	deleteButtons[deleteButtons.length - 1].addEventListener(
 		"click",
@@ -114,7 +115,7 @@ const deleteProductElement = (product) => {
 	const liToRemove = document.getElementById(product.id);
 	const parentNode = liToRemove.parentNode;
 	liToRemove.remove();
-	const liElements = document.querySelectorAll(".product-list li");
+	const liElements = document.querySelectorAll(".product-list > div");
 	if (!liElements.length) {
 		const noProductsNode = document.createElement("div");
 		noProductsNode.innerHTML = `No products loaded!`;
