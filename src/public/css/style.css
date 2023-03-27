@@ -12,6 +12,7 @@
 	--K-color: #5d2a2c;
 	--L-color: #59315f;
 	--M-color: #16172b;
+	--N-color: #ac0006;
 }
 
 * {
@@ -41,7 +42,7 @@ body {
 
 .products-main-container {
 	width: 90%;
-	max-width: 1200px;
+	max-width: 800px;
 }
 
 .list-header {
@@ -97,8 +98,7 @@ body {
 	color: #444;
 }
 
-.list-item,
-.delete-btn {
+.list-item {
 	background-color: #eee;
 }
 
@@ -108,6 +108,15 @@ body {
 }
 
 .open-modal-btn:active {
+	filter: brightness(90%);
+}
+
+.delete-btn {
+	color: #efefef;
+	background-color: var(--N-color);
+}
+
+.delete-btn:active {
 	filter: brightness(90%);
 }
 
@@ -196,12 +205,6 @@ body {
 	margin-top: 10px;
 }
 
-.input-container {
-	height: 40px;
-	position: relative;
-	width: 100%;
-}
-
 .input-container-thumbnails {
 	display: flex;
 	height: 40px;
@@ -263,7 +266,7 @@ body {
 	box-sizing: border-box;
 	color: #eee;
 	font-size: 1rem;
-	height: 100%;
+	height: 40px;
 	outline: 0;
 	padding: 4px 20px 0;
 	margin-left: 0.8rem;
@@ -284,6 +287,10 @@ body {
 
 .input:focus ~ .cut,
 .input:not(:placeholder-shown) ~ .cut {
+	transform: translateY(8px);
+}
+
+.thumbnails-cut {
 	transform: translateY(8px);
 }
 
@@ -310,6 +317,11 @@ body {
 
 .input:focus ~ .placeholder {
 	color: var(--E-color);
+}
+
+.thumbnails-placeholder {
+	transform: translateY(-25px) translateX(10px) scale(0.75);
+	color: #808097;
 }
 
 .submit {
@@ -354,4 +366,45 @@ body {
 
 .hidden {
 	display: none;
+}
+
+.input-container {
+	height: 40px;
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.file-upload__input {
+	display: none;
+}
+
+.file-upload__button {
+	-webkit-appearance: none;
+	background: #009879;
+	border: 2px solid #00745d;
+	border-radius: 4px;
+	outline: none;
+	padding: 0.5em 0.8em;
+	margin-right: 15px;
+	color: #ffffff;
+	font-size: 1em;
+	font-family: "Quicksand", sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.file-upload__button:active {
+	background: #00745d;
+}
+
+.file-upload__label {
+	color: #eee;
+	display: flex;
+	align-items: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }

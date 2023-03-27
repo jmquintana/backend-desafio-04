@@ -1,57 +1,71 @@
 [
 	{
+		"title": "Rábano",
+		"description": "raíz comestible de la planta Raphanus sativus",
+		"category": "verdura",
+		"code": "VWX9012",
+		"price": 45,
+		"stock": 789,
+		"thumbnails": [],
+		"status": true,
+		"id": 9
+	},
+	{
 		"title": "Pera",
 		"description": "fruto comestible de la planta Pyrus communis",
 		"category": "fruta",
 		"code": "VWX9019",
 		"price": 140,
 		"stock": 890,
+		"myFile[]": {},
 		"thumbnails": [],
 		"status": true,
-		"id": 1
+		"id": 10
 	},
 	{
-		"title": "Ejote Verde",
-		"description": "vaina comestible de la planta Phaseolus vulgaris",
+		"title": "Cebolla Verde",
+		"description": "planta de la familia de los lirios",
 		"category": "verdura",
-		"code": "JKL3456",
-		"price": 40,
-		"stock": 123,
+		"code": "GHI9012",
+		"price": 30,
+		"stock": 567,
+		"myFile[]": {},
 		"thumbnails": [],
 		"status": true,
-		"id": 2
+		"id": 11
 	},
 	{
-		"title": "Plátano",
-		"description": "fruto comestible de la planta Musa",
+		"title": "Piña",
+		"description": "fruto comestible de la planta Ananas comosus",
 		"category": "fruta",
-		"code": "DEF5679",
-		"price": 80,
-		"stock": 234,
+		"code": "YZA3459",
+		"price": 150,
+		"stock": 901,
+		"thumbnails[]": {},
 		"thumbnails": [],
 		"status": true,
-		"id": 3
+		"id": 12
 	},
 	{
-		"title": "Zanahoria",
-		"description": "raíz comestible de la planta Daucus carota",
-		"category": "verdura",
-		"code": "ABC1234",
-		"price": 50,
-		"stock": 234,
-		"thumbnails": [],
-		"status": true,
-		"id": 4
-	},
-	{
-		"title": "Espinaca",
-		"description": "hoja comestible de la planta Spinacia oleracea",
-		"category": "verdura",
-		"code": "MNO7890",
-		"price": 20,
+		"title": "Cereza",
+		"description": "fruto comestible de la planta Prunus avium",
+		"category": "fruta",
+		"code": "GHI9019",
+		"price": 90,
 		"stock": 345,
 		"thumbnails": [],
 		"status": true,
-		"id": 5
+		"id": 13
+	},
+	{
+		"title": "Nabo",
+		"description": "raíz comestible de la planta Brassica rapa",
+		"category": "verdura",
+		"code": "PQR1234",
+		"price": 35,
+		"stock": 678,
+		"thumbnails": [],
+		"status": true,
+		"id": 14
 	}
 ]

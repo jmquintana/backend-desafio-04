@@ -144,9 +144,41 @@ const populateForm = (form, data) => {
 	const formElements = [...form.elements];
 	formElements.forEach((element) => {
 		const id = element.id;
+		console.log(id);
 		element.value = data[id];
 	});
 };
+
+Array.prototype.forEach.call(
+	document.querySelectorAll(".browse-btn"),
+	function (button) {
+		const hiddenInput = button.parentElement.querySelector(
+			".file-upload__input"
+		);
+		const label = button.parentElement.querySelector(".file-upload__label");
+		const defaultLabelText = "No se seleccionó ninguna imagen";
+
+		// Set default text for label
+		label.textContent = defaultLabelText;
+		label.title = defaultLabelText;
+
+		button.addEventListener("click", function () {
+			hiddenInput.click();
+		});
+
+		hiddenInput.addEventListener("change", function () {
+			const filenameList = Array.prototype.map.call(
+				hiddenInput.files,
+				function (file) {
+					return file.name;
+				}
+			);
+
+			label.textContent = filenameList.join(", ") || defaultLabelText;
+			label.title = label.textContent;
+		});
+	}
+);
 
 const PRODUCTS = [
 	{

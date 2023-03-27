@@ -84,16 +84,32 @@
 			<div class="input-container-thumbnails ic2">
 				<div class="input-container">
 					<input
+						class="file-upload__input"
+						type="file"
+						name="thumbnails"
+						id="thumbnails"
+						multiple
+					/>
+					<div class="cut thumbnails-cut"></div>
+					<label
+						for="thumbnails"
+						class="placeholder thumbnails-placeholder"
+					>Imágenes</label>
+					<div class="file-upload__label input"></div>
+					<button class="browse-btn" type="button">Buscar</button>
+				</div>
+				{{! <div class="input-container">
+					<input
 						name="thumbnails"
 						id="thumbnails"
 						class="input"
-						type="text"
+						type="file"
+						multiple
+						accept="image/*"
 						placeholder=" "
 					/>
-					<div class="cut"></div>
-					<label for="thumbnails" class="placeholder">Imágenes</label>
-				</div>
-				<button type="button" class="browse-btn">Buscar</button>
+				</div> }}
+				{{! <button type="button" class="browse-btn">Buscar</button> }}
 			</div>
 			<button
 				type="submit"
