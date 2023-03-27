@@ -19,7 +19,7 @@ router.get("/:pid", async (req, res) => {
 	return res.send(result);
 });
 
-router.post("/", uploader.array("thumbnails", 5), async (req, res) => {
+router.post("/", uploader.array("thumbnails", 10), async (req, res) => {
 	let product = req.body;
 	let files = req.files;
 
