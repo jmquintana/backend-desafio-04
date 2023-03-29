@@ -69,19 +69,22 @@ form.addEventListener("submit", (e) => {
 	const formDataObj = {};
 	myFormData.forEach((value, key) => (formDataObj[key] = value));
 	console.log(formDataObj);
-
+	let file = e.target.thumbnails.files[0];
+	console.log(file);
+	formDataObj.thumbnails = file;
+	console.log(formDataObj);
 	fetch("/api/products", {
 		method: "POST",
-		body: JSON.stringify(formDataObj),
-		headers: {
-			"Content-Type": "application/json",
-		},
-	}).then((response) => {
-		if (!response.ok) {
-			console.log(response);
-			showAlert("Product already exists!", "error");
-		}
-	});
+		body: myFormData,
+	})
+		.then((resp) => resp.json())
+		.then((data) => {
+			if (data.errors) {
+				alert(data.errors);
+			} else {
+				console.log(data);
+			}
+		});
 });
 
 deleteButtons.forEach((element) => {
@@ -96,7 +99,7 @@ const addProductElement = (product) => {
 	const listElement = document.createElement("div");
 	listElement.innerHTML = `<div class="list-item-group"><div class="list-item"><b>Id: </b>${product.id} <b>Producto:</b>	${product.title} <b>Categoría:</b> ${product.category} <b>Código:</b> ${product.code}</div><div class="delete-btn">Borrar</div></div>`;
 	product.thumbnails.forEach((thumbnail) => {
-		listElement.innerHTML += `<img class="thumbnail" src="${thumbnail}" />`;
+		listElement.innerHTML += `<img class="thumbnail" src="${thumbnail}" alt="" />`;
 	});
 	listElement.id = product.id;
 	groupListElement.appendChild(listElement);
