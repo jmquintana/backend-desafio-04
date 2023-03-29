@@ -163,15 +163,16 @@ export default class ProductManager {
 			);
 			await this.#writeFile(newProducts);
 
-			socket.io.emit("product_deleted", {
-				status: "Product deleted",
+			const result = {
+				ok: true,
+				status: "Success",
+				message: "Product deleted",
 				result: product.result,
-			});
+			};
+			socket.io.emit("product_deleted", result);
 
 			if (products.length - newProducts.length > 0) {
-				const message = "Product deleted!";
-				console.log(message);
-				return { ok: true, status: "Success", message };
+				return result;
 			}
 		}
 	};

@@ -1,13 +1,35 @@
 [
 	{
-		"title": "Camote",
-		"description": "raíz comestible de la planta Ipomoea batatas",
+		"title": "Nabo",
+		"description": "raíz comestible de la planta Brassica rapa",
 		"category": "verdura",
-		"code": "DEF5678",
-		"price": 60,
-		"stock": 432,
+		"code": "PQR1234",
+		"price": 35,
+		"stock": 678,
 		"thumbnails": [],
 		"status": true,
-		"id": 15
+		"id": 1
+	},
+	{
+		"title": "Kiwi",
+		"description": "fruto comestible de la planta Actinidia deliciosa",
+		"category": "fruta",
+		"code": "MNO7899",
+		"price": 110,
+		"stock": 567,
+		"thumbnails": [],
+		"status": true,
+		"id": 2
+	},
+	{
+		"title": "Cereza",
+		"description": "fruto comestible de la planta Prunus avium",
+		"category": "fruta",
+		"code": "GHI9019",
+		"price": 90,
+		"stock": 345,
+		"thumbnails": [],
+		"status": true,
+		"id": 3
 	}
 ]
