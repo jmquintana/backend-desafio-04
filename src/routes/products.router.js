@@ -42,7 +42,7 @@ router.post("/", uploader.array("thumbnails", 10), async (req, res) => {
 	const result = await manager.addProduct(product);
 
 	if (result.status === "Added") {
-		res.send({ status: "Success", result: "Product added" });
+		res.send(result);
 	} else {
 		res.status(400).send(result);
 	}

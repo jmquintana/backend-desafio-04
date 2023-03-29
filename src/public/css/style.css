@@ -33,11 +33,16 @@ body {
 	position: relative;
 }
 
+.custom-target {
+	width: 100vw;
+	height: 100vh;
+}
+
 .main-container {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	width: 100vw;
+	width: 100%;
 }
 
 .products-main-container {
@@ -86,7 +91,8 @@ body {
 
 .list-item,
 .open-modal-btn,
-.delete-btn {
+.delete-btn,
+.browse-btn {
 	display: flex;
 	align-items: center;
 	height: 40px;
@@ -95,7 +101,6 @@ body {
 	margin: 0.3rem;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-	color: #444;
 }
 
 .list-item {
@@ -237,6 +242,10 @@ body {
 	width: 100%;
 }
 
+.input:hover {
+	filter: brightness(120%);
+}
+
 .cut {
 	background-color: var(--M-color);
 	border-radius: 10px;
@@ -247,6 +256,7 @@ body {
 	transform: translateY(0);
 	transition: transform 200ms;
 	width: 76px;
+	z-index: 2;
 }
 
 .cut-short {
@@ -306,6 +316,7 @@ body {
 	transform-origin: 0 50%;
 	transition: transform 200ms, color 200ms;
 	top: 15px;
+	z-index: 2;
 }
 
 .input:focus ~ .placeholder,

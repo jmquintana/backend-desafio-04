@@ -39,11 +39,17 @@ const handleAdd = (e) => {
 		headers: {
 			"Content-Type": "application/json",
 		},
-	}).then((response) => {
-		if (!response.ok) {
-			showAlert("Product already exists!", "error");
-		}
-	});
+	})
+		.then((resp) => resp.json())
+		.then((data) => {
+			if (!data.ok) {
+				console.log(data);
+				showAlert(data.message, "error");
+			} else {
+				console.log(data);
+				showAlert(data.message, "success");
+			}
+		});
 };
 
 const handleDelete = (e) => {
@@ -66,23 +72,18 @@ browseButton.addEventListener("click", (e) => {
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	const myFormData = new FormData(e.target);
-	const formDataObj = {};
-	myFormData.forEach((value, key) => (formDataObj[key] = value));
-	console.log(formDataObj);
-	let file = e.target.thumbnails.files[0];
-	console.log(file);
-	formDataObj.thumbnails = file;
-	console.log(formDataObj);
 	fetch("/api/products", {
 		method: "POST",
 		body: myFormData,
 	})
 		.then((resp) => resp.json())
 		.then((data) => {
-			if (data.errors) {
-				alert(data.errors);
+			if (!data.ok) {
+				console.log(data);
+				showAlert(data.message, "error");
 			} else {
 				console.log(data);
+				showAlert(data.message, "success");
 			}
 		});
 });
@@ -147,8 +148,11 @@ const populateForm = (form, data) => {
 	const formElements = [...form.elements];
 	formElements.forEach((element) => {
 		const id = element.id;
-		console.log(id);
 		element.value = data[id];
+		if (element.id === "thumbnails") {
+			console.log(element);
+			element.value = "";
+		}
 	});
 };
 

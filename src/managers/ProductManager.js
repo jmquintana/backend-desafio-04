@@ -71,6 +71,7 @@ export default class ProductManager {
 		const isValidProduct = this.#isValidProduct(newProduct);
 		if (!isValidProduct.status)
 			return {
+				ok: false,
 				status: "Rejected",
 				result: isValidProduct.response,
 			};
@@ -94,17 +95,20 @@ export default class ProductManager {
 		} else {
 			const message = "Product already exist! You may update it.";
 			console.log(message);
-			return { status: "Rejected", message };
+			return { ok: false, status: "Rejected", message };
 		}
 
 		await this.#writeFile(products);
 
-		socket.io.emit("product_added", {
-			status: "Product added",
+		const response = {
+			ok: true,
+			status: "Added",
+			message: "Product added!",
 			result: newProduct,
-		});
+		};
+		socket.io.emit("product_added", response);
 
-		return { status: "Added", newProduct };
+		return response;
 	};
 
 	getProductById = async (productId) => {
@@ -118,13 +122,13 @@ export default class ProductManager {
 			if (productIndex === -1) {
 				const message = "Product missing!";
 				console.error(message);
-				return { status: "Rejected", message };
+				return { ok: false, status: "Rejected", message };
 			} else {
 				const result = json[productIndex];
-				return { status: "Success", result };
+				return { ok: true, status: "Success", result };
 			}
 		} else {
-			return { status: "Empty", result: [] };
+			return { ok: true, status: "Empty", result: [] };
 		}
 	};
 
@@ -146,7 +150,7 @@ export default class ProductManager {
 			products[productIndex] = updatedProduct;
 			await this.#writeFile(products);
 			console.log("Product updated!");
-			return { status: "Updated", updatedProduct };
+			return { ok: true, status: "Updated", updatedProduct };
 		}
 	};
 
@@ -169,7 +173,7 @@ export default class ProductManager {
 			if (products.length - newProducts.length > 0) {
 				const message = "Product deleted!";
 				console.log(message);
-				return { status: "Success", message };
+				return { ok: true, status: "Success", message };
 			}
 		}
 	};
