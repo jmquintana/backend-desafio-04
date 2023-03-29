@@ -1,83 +1,13 @@
 [
 	{
-		"title": "Plátano",
-		"description": "fruto comestible de la planta Musa",
-		"category": "fruta",
-		"code": "DEF5679",
-		"price": 80,
-		"stock": 234,
-		"thumbnails": [],
-		"status": true,
-		"id": 1
-	},
-	{
-		"title": "Espinaca",
-		"description": "hoja comestible de la planta Spinacia oleracea",
+		"title": "Camote",
+		"description": "raíz comestible de la planta Ipomoea batatas",
 		"category": "verdura",
-		"code": "MNO7890",
-		"price": 20,
-		"stock": 345,
+		"code": "DEF5678",
+		"price": 60,
+		"stock": 432,
 		"thumbnails": [],
 		"status": true,
-		"id": 2
-	},
-	{
-		"title": "Naranja",
-		"description": "fruto comestible de la planta Citrus × sinensis",
-		"category": "fruta",
-		"code": "STU5679",
-		"price": 130,
-		"stock": 789,
-		"thumbnails": [
-			"http://localhost:8080/images/AntaresBlueDiamond.png"
-		],
-		"status": true,
-		"id": 3
-	},
-	{
-		"title": "Mango",
-		"description": "fruto comestible de la planta Mangifera indica",
-		"category": "fruta",
-		"code": "PQR1239",
-		"price": 120,
-		"stock": 678,
-		"thumbnails": [],
-		"status": true,
-		"id": 4
-	},
-	{
-		"title": "Fresa",
-		"description": "fruto comestible de la planta Fragaria × ananassa",
-		"category": "fruta",
-		"code": "JKL3459",
-		"price": 100,
-		"stock": 456,
-		"thumbnails": [
-			"http://localhost:8080/images/AntaresBlueDiamond.png"
-		],
-		"status": true,
-		"id": 5
-	},
-	{
-		"title": "Ejote Verde",
-		"description": "vaina comestible de la planta Phaseolus vulgaris",
-		"category": "verdura",
-		"code": "JKL3456",
-		"price": 40,
-		"stock": 123,
-		"thumbnails": [],
-		"status": true,
-		"id": 6
-	},
-	{
-		"title": "Pera",
-		"description": "fruto comestible de la planta Pyrus communis",
-		"category": "fruta",
-		"code": "VWX9019",
-		"price": 140,
-		"stock": 890,
-		"thumbnails": [],
-		"status": true,
-		"id": 7
+		"id": 15
 	}
 ]

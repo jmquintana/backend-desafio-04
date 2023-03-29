@@ -44,7 +44,7 @@ router.post("/", uploader.array("thumbnails", 10), async (req, res) => {
 	if (result.status === "Added") {
 		res.send(result);
 	} else {
-		res.status(400).send(result);
+		res.send(result);
 	}
 });
 

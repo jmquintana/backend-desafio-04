@@ -79,10 +79,8 @@ form.addEventListener("submit", (e) => {
 		.then((resp) => resp.json())
 		.then((data) => {
 			if (!data.ok) {
-				console.log(data);
 				showAlert(data.message, "error");
 			} else {
-				console.log(data);
 				showAlert(data.message, "success");
 			}
 		});
@@ -150,7 +148,6 @@ const populateForm = (form, data) => {
 		const id = element.id;
 		element.value = data[id];
 		if (element.id === "thumbnails") {
-			console.log(element);
 			element.value = "";
 		}
 	});

@@ -14,7 +14,6 @@ export default class ProductManager {
 	#readFile = async (filePath) => await fs.promises.readFile(filePath, "utf-8");
 
 	#isValidProduct = (product) => {
-		console.log(product);
 		const hasTitle = product.title ?? "" !== "";
 		const hasDescription = product.description ?? "" !== "";
 		const hasCode = product.code ?? "" !== "";
@@ -33,22 +32,20 @@ export default class ProductManager {
 			)
 		) {
 			return {
-				status: false,
+				ok: false,
+				message: "Invalid product!",
 				response: {
-					message: "Invalid product!",
-					detail: {
-						hasTitle,
-						hasDescription,
-						hasCode,
-						hasPrice,
-						hasStock,
-						hasCategory,
-					},
+					hasTitle,
+					hasDescription,
+					hasCode,
+					hasPrice,
+					hasStock,
+					hasCategory,
 				},
 			};
 		} else {
 			return {
-				status: true,
+				ok: true,
 			};
 		}
 	};
@@ -69,10 +66,11 @@ export default class ProductManager {
 	addProduct = async (newProduct) => {
 		// check if it is a valid product
 		const isValidProduct = this.#isValidProduct(newProduct);
-		if (!isValidProduct.status)
+		if (!isValidProduct.ok)
 			return {
 				ok: false,
 				status: "Rejected",
+				message: "Invalid product!",
 				result: isValidProduct.response,
 			};
 
@@ -135,7 +133,7 @@ export default class ProductManager {
 	updateProduct = async (productId, newProperties) => {
 		const product = await this.getProductById(productId);
 		const products = await this.getProducts();
-		if (product.status === "Rejected") {
+		if (!product.ok) {
 			return product;
 		} else {
 			const updatedProduct = {
@@ -156,7 +154,7 @@ export default class ProductManager {
 
 	deleteProduct = async (productId) => {
 		const product = await this.getProductById(productId);
-		if (product.status === "Rejected") {
+		if (!product.ok) {
 			return product;
 		} else {
 			const products = await this.getProducts();
