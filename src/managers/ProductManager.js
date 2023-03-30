@@ -33,7 +33,7 @@ export default class ProductManager {
 		) {
 			return {
 				ok: false,
-				message: "Invalid product!",
+				message: "Invalid product",
 				response: {
 					hasTitle,
 					hasDescription,
@@ -70,7 +70,7 @@ export default class ProductManager {
 			return {
 				ok: false,
 				status: "Rejected",
-				message: "Invalid product!",
+				message: "Invalid product",
 				result: isValidProduct.response,
 			};
 
@@ -91,7 +91,7 @@ export default class ProductManager {
 			}
 			products.push(newProduct);
 		} else {
-			const message = "Product already exist! You may update it.";
+			const message = `Product already exist <br>You may update it`;
 			console.log(message);
 			return { ok: false, status: "Rejected", message };
 		}
@@ -101,7 +101,7 @@ export default class ProductManager {
 		const response = {
 			ok: true,
 			status: "Added",
-			message: "Product added!",
+			message: "Product added",
 			result: newProduct,
 		};
 		socket.io.emit("product_added", response);
@@ -118,7 +118,7 @@ export default class ProductManager {
 			);
 
 			if (productIndex === -1) {
-				const message = "Product missing!";
+				const message = "Product missing";
 				console.error(message);
 				return { ok: false, status: "Rejected", message };
 			} else {
@@ -147,7 +147,7 @@ export default class ProductManager {
 			);
 			products[productIndex] = updatedProduct;
 			await this.#writeFile(products);
-			console.log("Product updated!");
+			console.log("Product updated");
 			return { ok: true, status: "Updated", updatedProduct };
 		}
 	};

@@ -101,6 +101,7 @@ body {
 	margin: 0.3rem;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	transition: all ease 0.25s;
 }
 
 .list-item {
@@ -117,12 +118,25 @@ body {
 }
 
 .delete-btn {
-	color: #efefef;
-	background-color: var(--N-color);
+	display: flex;
+	align-items: center;
+	height: 40px;
+	border: 1px solid var(--N-color);
+	border-radius: 12px;
+	padding: 0px 8px;
+	margin: 0.3rem;
+	background-color: #fff;
+	color: var(--N-color);
 }
 
 .delete-btn:active {
 	filter: brightness(90%);
+}
+
+.delete-btn:hover {
+	background-color: var(--N-color);
+	color: #fff;
+	cursor: pointer;
 }
 
 .list-item > * {
@@ -140,12 +154,8 @@ body {
 	font-weight: 600;
 }
 
-.delete-btn:hover {
-	filter: brightness(90%);
-	cursor: pointer;
-}
 .open-modal-btn:hover {
-	filter: brightness(110%);
+	filter: brightness(120%);
 	cursor: pointer;
 }
 
@@ -285,11 +295,11 @@ body {
 	cursor: pointer;
 	text-align: center;
 	background-color: var(--D-color);
-	transition: background-color ease 0.15s;
+	transition: all ease 0.25s;
 }
 
 .browse-btn:hover {
-	filter: brightness(110%);
+	filter: brightness(120%);
 	cursor: pointer;
 }
 
@@ -351,11 +361,11 @@ body {
 	outline: 0;
 	text-align: center;
 	width: 100%;
-	transition: background-color ease 0.15s;
+	transition: all ease 0.25s;
 }
 
 .submit:hover {
-	filter: brightness(110%);
+	filter: brightness(120%);
 	cursor: pointer;
 }
 

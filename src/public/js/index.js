@@ -11,6 +11,7 @@ const openModal = () => {
 	form.classList.remove("hidden");
 	modal.classList.remove("hidden");
 	overlay.classList.remove("hidden");
+	form.classList.remove("transparent");
 	modal.classList.remove("transparent");
 	overlay.classList.remove("transparent");
 	form.classList.remove("animate__fadeOutUp");
@@ -28,6 +29,7 @@ const closeModal = () => {
 	// modal.classList.add("hidden");
 	// overlay.classList.add("hidden");
 	// form.classList.add("hidden");
+	form.classList.add("transparent");
 	modal.classList.add("transparent");
 	overlay.classList.add("transparent");
 	form.classList.add("animate__fadeOutUp");
@@ -119,6 +121,7 @@ const addProductElement = (product) => {
 	});
 	listElement.id = product.id;
 	groupListElement.appendChild(listElement);
+	listElement.classList.add("animate_animated", "animate__shakeX");
 	const deleteButtons = document.querySelectorAll(".delete-btn");
 	deleteButtons[deleteButtons.length - 1].addEventListener(
 		"click",
@@ -127,7 +130,7 @@ const addProductElement = (product) => {
 	const noProductsNode = document.querySelectorAll(".no-products");
 	noProductsNode.forEach((node) => node.remove());
 
-	showAlert("Product added!", "success");
+	showAlert("Product added", "success");
 };
 
 const deleteProductElement = (product) => {
@@ -141,12 +144,12 @@ const deleteProductElement = (product) => {
 		noProductsNode.classList.add("no-products");
 		parentNode.appendChild(noProductsNode);
 	}
-	showAlert("Product deleted!", "success");
+	showAlert("Product deleted", "success");
 };
 
 const showAlert = (message, icon) => {
 	Swal.fire({
-		text: message,
+		html: message,
 		target: "#custom-target",
 		customClass: {
 			container: "position-absolute",
