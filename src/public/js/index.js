@@ -1,8 +1,8 @@
 const socket = io();
 const openModalBtn = document.querySelector(".open-modal-btn");
 const deleteButtons = document.querySelectorAll(".delete-btn");
-const modal = document.querySelector(".modal");
 const form = document.querySelector(".form");
+const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const browseButton = document.querySelector(".browse-btn");
 const addProductBtn = document.querySelector(".submit");
@@ -11,14 +11,31 @@ const openModal = () => {
 	form.classList.remove("hidden");
 	modal.classList.remove("hidden");
 	overlay.classList.remove("hidden");
+	modal.classList.remove("transparent");
+	overlay.classList.remove("transparent");
+	form.classList.remove("animate__fadeOutUp");
+	modal.classList.remove("animate__fadeOut");
+	overlay.classList.remove("animate__fadeOut");
+	form.classList.add("animate__fadeInDown");
+	modal.classList.add("animate__fadeIn");
+	overlay.classList.add("animate__fadeIn");
 	populateForm(form, PRODUCTS[random(PRODUCTS.length)]);
 	addProductBtn.focus();
 };
 
 const closeModal = () => {
-	form.classList.add("hidden");
-	modal.classList.add("hidden");
-	overlay.classList.add("hidden");
+	// form.classList.add("hidden");
+	// modal.classList.add("hidden");
+	// overlay.classList.add("hidden");
+	// form.classList.add("hidden");
+	modal.classList.add("transparent");
+	overlay.classList.add("transparent");
+	form.classList.add("animate__fadeOutUp");
+	modal.classList.add("animate__fadeOut");
+	overlay.classList.add("animate__fadeOut");
+	form.classList.remove("animate__fadeInDown");
+	modal.classList.remove("animate__fadeIn");
+	overlay.classList.remove("animate__fadeIn");
 };
 
 overlay.addEventListener("click", closeModal);

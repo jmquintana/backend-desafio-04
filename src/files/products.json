@@ -1,16 +1,5 @@
 [
 	{
-		"title": "Nabo",
-		"description": "raíz comestible de la planta Brassica rapa",
-		"category": "verdura",
-		"code": "PQR1234",
-		"price": 35,
-		"stock": 678,
-		"thumbnails": [],
-		"status": true,
-		"id": 1
-	},
-	{
 		"title": "Kiwi",
 		"description": "fruto comestible de la planta Actinidia deliciosa",
 		"category": "fruta",
@@ -31,5 +20,59 @@
 		"thumbnails": [],
 		"status": true,
 		"id": 3
+	},
+	{
+		"title": "Manzana",
+		"description": "fruto comestible de la planta Malus domestica",
+		"category": "fruta",
+		"code": "ABC1239",
+		"price": 70,
+		"stock": 123,
+		"thumbnails": [
+			"http://localhost:8080/images/AntaresBlueDiamondKriptonite.png",
+			"http://localhost:8080/images/BismuthGalaxyNebula.png",
+			"http://localhost:8080/images/IceFractalGalaxy.png",
+			"http://localhost:8080/images/SpaceTimeBeauty.png"
+		],
+		"status": true,
+		"id": 4
+	},
+	{
+		"title": "Plátano",
+		"description": "fruto comestible de la planta Musa",
+		"category": "fruta",
+		"code": "DEF5679",
+		"price": 80,
+		"stock": 234,
+		"thumbnails": [
+			"http://localhost:8080/images/IceFractalGalaxy.png",
+			"http://localhost:8080/images/SpaceTimeBeauty.png",
+			"http://localhost:8080/images/SpaceTimeCreature.png",
+			"http://localhost:8080/images/SpaceTimeFlower.png"
+		],
+		"status": true,
+		"id": 5
+	},
+	{
+		"title": "Zanahoria",
+		"description": "raíz comestible de la planta Daucus carota",
+		"category": "verdura",
+		"code": "ABC1234",
+		"price": 50,
+		"stock": 234,
+		"thumbnails": [],
+		"status": true,
+		"id": 15
+	},
+	{
+		"title": "Rábano",
+		"description": "raíz comestible de la planta Raphanus sativus",
+		"category": "verdura",
+		"code": "VWX9012",
+		"price": 45,
+		"stock": 789,
+		"thumbnails": [],
+		"status": true,
+		"id": 16
 	}
 ]

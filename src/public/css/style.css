@@ -377,6 +377,10 @@ body {
 	-webkit-backdrop-filter: blur(10px);
 }
 
+.transparent {
+	pointer-events: none;
+}
+
 .hidden {
 	display: none;
 }
