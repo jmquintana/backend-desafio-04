@@ -1,5 +1,48 @@
 [
 	{
+		"title": "Nabo",
+		"description": "raíz comestible de la planta Brassica rapa",
+		"category": "verdura",
+		"code": "PQR1234",
+		"price": 35,
+		"stock": 678,
+		"thumbnails": [
+			"http://localhost:8080/images/AntaresBlueDiamond.png",
+			"http://localhost:8080/images/AntaresBlueDiamondKriptonite.png"
+		],
+		"status": true,
+		"id": 1
+	},
+	{
+		"title": "Calabaza",
+		"description": "fruto comestible de la planta Cucurbita pepo",
+		"category": "verdura",
+		"code": "BCD7890",
+		"price": 65,
+		"stock": 876,
+		"thumbnails": [
+			"http://localhost:8080/images/BismuthGalaxyNebula.png",
+			"http://localhost:8080/images/IceFractalGalaxy.png",
+			"http://localhost:8080/images/SpaceTimeBeauty.png"
+		],
+		"status": true,
+		"id": 2
+	},
+	{
+		"title": "Uva",
+		"description": "fruto comestible de la planta Vitis vinifera",
+		"category": "fruta",
+		"code": "BCD7899",
+		"price": 160,
+		"stock": 12,
+		"thumbnails": [
+			"http://localhost:8080/images/SpaceTimeCreature.png",
+			"http://localhost:8080/images/SpaceTimeFlower.png"
+		],
+		"status": true,
+		"id": 3
+	},
+	{
 		"title": "Rábano",
 		"description": "raíz comestible de la planta Raphanus sativus",
 		"category": "verdura",
@@ -8,20 +51,37 @@
 		"stock": 789,
 		"thumbnails": [],
 		"status": true,
-		"id": 37
+		"id": 4
 	},
 	{
-		"title": "Cebolla Verde",
-		"description": "planta de la familia de los lirios",
+		"title": "Camote",
+		"description": "raíz comestible de la planta Ipomoea batatas",
 		"category": "verdura",
-		"code": "GHI9012",
-		"price": 30,
-		"stock": 567,
+		"code": "DEF5678",
+		"price": 60,
+		"stock": 432,
+		"thumbnails": [],
+		"status": true,
+		"id": 5
+	},
+	{
+		"title": "Fresa",
+		"description": "fruto comestible de la planta Fragaria × ananassa",
+		"category": "fruta",
+		"code": "JKL3459",
+		"price": 100,
+		"stock": 456,
 		"thumbnails": [
-			"http://localhost:8080/images/SpaceTimeBeauty.png"
+			"http://localhost:8080/images/AntaresBlueDiamond.png",
+			"http://localhost:8080/images/AntaresBlueDiamondKriptonite.png",
+			"http://localhost:8080/images/BismuthGalaxyNebula.png",
+			"http://localhost:8080/images/IceFractalGalaxy.png",
+			"http://localhost:8080/images/SpaceTimeBeauty.png",
+			"http://localhost:8080/images/SpaceTimeCreature.png",
+			"http://localhost:8080/images/SpaceTimeFlower.png"
 		],
 		"status": true,
-		"id": 38
+		"id": 6
 	},
 	{
 		"title": "Mango",
@@ -32,39 +92,17 @@
 		"stock": 678,
 		"thumbnails": [],
 		"status": true,
-		"id": 39
+		"id": 7
 	},
 	{
-		"title": "Espinaca",
-		"description": "hoja comestible de la planta Spinacia oleracea",
+		"title": "Puerro",
+		"description": "planta de la familia de los lirios",
 		"category": "verdura",
-		"code": "MNO7890",
-		"price": 20,
-		"stock": 345,
+		"code": "STU5678",
+		"price": 25,
+		"stock": 456,
 		"thumbnails": [],
 		"status": true,
-		"id": 44
-	},
-	{
-		"title": "Pera",
-		"description": "fruto comestible de la planta Pyrus communis",
-		"category": "fruta",
-		"code": "VWX9019",
-		"price": 140,
-		"stock": 890,
-		"thumbnails": [],
-		"status": true,
-		"id": 45
-	},
-	{
-		"title": "Cereza",
-		"description": "fruto comestible de la planta Prunus avium",
-		"category": "fruta",
-		"code": "GHI9019",
-		"price": 90,
-		"stock": 345,
-		"thumbnails": [],
-		"status": true,
-		"id": 46
+		"id": 8
 	}
 ]

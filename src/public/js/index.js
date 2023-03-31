@@ -140,7 +140,7 @@ const deleteProductElement = (product) => {
 	const liElements = document.querySelectorAll(".product-list > div");
 	if (!liElements.length) {
 		const noProductsNode = document.createElement("div");
-		noProductsNode.innerHTML = `No products loaded!`;
+		noProductsNode.innerHTML = `No products loaded`;
 		noProductsNode.classList.add("no-products");
 		parentNode.appendChild(noProductsNode);
 	}
